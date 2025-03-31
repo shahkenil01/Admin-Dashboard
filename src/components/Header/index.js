@@ -30,6 +30,17 @@ const Header = () => {
             <div className="col-sm-7 d-flex align-items-center justify-content-end part3">
               <Button className='rounded-circle mr-3'><MdOutlineLightMode /></Button>
               <Button className='rounded-circle mr-3'><FaRegBell /></Button>
+
+              <div className="myAccWrapper">
+                <div className="myAcc d-flex align-items-center">
+                  <div className='userImg'>
+                    <span className='rounded-circle'>
+                      <img src="https://mironcoder-hotash.netlify.app/images/avatar/01.webp"/>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              
             </div>
           </div>
         </div>
