@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom';
 import logo from '../../assets/images/logo.png';
 import Button from '@mui/material/Button';
-import { MdMenuOpen } from "react-icons/md";
-import { MdOutlineMenu } from "react-icons/md";
+import { MdMenuOpen } from 'react-icons/md';
+import { MdOutlineMenu } from 'react-icons/md';
 import SearchBox from '../SearchBox';
+import { MdOutlineLightMode } from 'react-icons/md';
+import { FaRegBell } from "react-icons/fa6";
 
 const Header = () => {
   return (
@@ -19,9 +21,15 @@ const Header = () => {
               </Link>
             </div>
 
+            {/* Menu and SerchBox Section */}
             <div className='col-sm-3 d-flex align-items-center part2'>
-              <Button className='rounded-circle mr-3'><MdMenuOpen/></Button>
-              <SearchBox/>
+              <Button className='rounded-circle mr-3'><MdMenuOpen /></Button>
+              <SearchBox />
+            </div>
+
+            <div className="col-sm-7 d-flex align-items-center justify-content-end part3">
+              <Button className='rounded-circle mr-3'><MdOutlineLightMode /></Button>
+              <Button className='rounded-circle mr-3'><FaRegBell /></Button>
             </div>
           </div>
         </div>
