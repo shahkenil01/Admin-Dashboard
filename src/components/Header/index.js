@@ -3,6 +3,7 @@ import logo from '../../assets/images/logo.png';
 import Button from '@mui/material/Button';
 import { MdMenuOpen } from "react-icons/md";
 import { MdOutlineMenu } from "react-icons/md";
+import SearchBox from '../SearchBox';
 
 const Header = () => {
   return (
@@ -19,7 +20,8 @@ const Header = () => {
             </div>
 
             <div className='col-sm-3 d-flex align-items-center part2'>
-              <Button className='rounded-circle'><MdMenuOpen/></Button>
+              <Button className='rounded-circle mr-3'><MdMenuOpen/></Button>
+              <SearchBox/>
             </div>
           </div>
         </div>
