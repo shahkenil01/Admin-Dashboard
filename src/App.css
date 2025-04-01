@@ -28,7 +28,11 @@ body{
 header{
   width: 100%;
   height: 70px;
-  background: #fff;}
+  background: #fff;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;}
 header .logo{
   text-decoration: none;}
 header .logo img{
@@ -161,3 +165,16 @@ header button.rounded-circle:hover svg{
   font-size: 12px;
   font-weight: 500;
   margin-top: 0px;}
+
+
+.main .sidebarWrapper{
+  width: 20%;
+  flex: 0 0 20%;
+  transition: all 0.3s ease-in-out;}
+.main .sidebarWrapper .sidebar{
+  width: 20%;
+  height: 100vh;
+  position: fixed;
+  top: 70px;
+  left: 0px;
+  background: #fff;}
