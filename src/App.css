@@ -95,7 +95,10 @@ header button.rounded-circle:hover svg{
   color: #292929;
   opacity: 0.7;}
 
+#account-menu{
+  margin-left: 10px;}
 #account-menu li{
-  font-size: 14px;}
+  font-size: 14px;
+  padding: 10px 15px;}
 #account-menu li svg{
   font-size: 20px;}
