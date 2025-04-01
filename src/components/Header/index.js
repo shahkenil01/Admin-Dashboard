@@ -10,6 +10,7 @@ import { FaRegBell } from 'react-icons/fa6';
 
 import { Menu, MenuItem, ListItemIcon } from "@mui/material";
 import { Logout, Settings, PersonAdd } from "@mui/icons-material";
+import { IoShieldHalfSharp } from "react-icons/io5";
 
 const Header = () => {
   const [anchorEl, setAnchorEl] = 
@@ -75,7 +76,7 @@ const Header = () => {
                     My Account
                   </MenuItem>
                   <MenuItem onClick={handleCloseMyAccDrop}>
-                    <ListItemIcon> <Settings fontSize="small" /> </ListItemIcon>
+                    <ListItemIcon> <IoShieldHalfSharp/> </ListItemIcon>
                     Reset Password
                   </MenuItem>
                   <MenuItem onClick={handleCloseMyAccDrop}>
