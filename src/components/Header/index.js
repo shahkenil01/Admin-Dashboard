@@ -72,6 +72,7 @@ const Header = () => {
                     <h4>Orders (12)</h4>
                   </div>
                   <Divider className="mb-1"/>
+                  <div className="scroll">
                   <MenuItem onClick={handleClosenotificationsDrop}>
                     <div className='d-flex'>
                       <div>
@@ -186,6 +187,31 @@ const Header = () => {
                       </div>
                     </div>
                   </MenuItem>
+                  <MenuItem onClick={handleClosenotificationsDrop}>
+                    <div className='d-flex'>
+                      <div>
+                        <div className="userImg">
+                          <span className='rounded-circle'>
+                            <img src="https://mironcoder-hotash.netlify.app/images/avatar/01.webp" alt="profile"/>
+                          </span>
+                        </div>
+                      </div>
+                      <div className="dropdownInfo">
+                        <h4>
+                          <span>
+                            <b>Mahmudul </b>added to his favorite list<b> Leather belt steve madden</b>
+                          </span>
+                        </h4>
+                        <p className="text-sky mb-0">few seconds ago</p>
+                      </div>
+                    </div>
+                  </MenuItem>
+                  </div>
+
+                  <div className="pl-3 pr-3 pt-2 pb-1 w-100">
+                    <Button className='btn-blue w-100'>View all notifications</Button>
+                  </div>
+
                 </Menu>
               </div>
 
