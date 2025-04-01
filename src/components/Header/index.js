@@ -14,10 +14,10 @@ import { IoShieldHalfSharp } from "react-icons/io5";
 
 const Header = () => {
   const [anchorEl, setAnchorEl] = useState(null);
-  const [IsOpennotificationDrop, setIsOpennotificationDrop] = useState(false);
-  const [openNotifications, setOpenNotifications] = useState(false);
+  const [notificationAnchorEl, setNotificationAnchorEl] = useState(null);
 
   const openMyAcc = Boolean(anchorEl);
+  const openNotifications = Boolean(notificationAnchorEl);
 
   const handleOpenMyAccDrop = (event) => {
     setAnchorEl(event.currentTarget);
@@ -26,11 +26,11 @@ const Header = () => {
     setAnchorEl(null);
   };
 
-  const handleOpennotificationsDrop = () => {
-    setOpenNotifications(true);
+  const handleOpennotificationsDrop = (event) => {
+    setNotificationAnchorEl(event.currentTarget);
   };
   const handleClosenotificationsDrop = () => {
-    setOpenNotifications(false);
+    setNotificationAnchorEl(null);
   };
 
   return (
@@ -58,14 +58,13 @@ const Header = () => {
               <Button className="rounded-circle mr-3"> <MdOutlineLightMode /> </Button>
               <Button className="rounded-circle mr-3" onClick={handleOpennotificationsDrop}> <FaRegBell /> </Button>
 
-              <div className='dropdownWrapper postion-relative'>
-              <Menu
-                  anchorEl={IsOpennotificationDrop}
+              <div className='dropdownWrapper position-relative'>
+                <Menu
+                  anchorEl={notificationAnchorEl}
                   className="notifications"
                   id="notifications"
                   open={openNotifications}
                   onClose={handleClosenotificationsDrop}
-                  onClick={handleClosenotificationsDrop}
                   transformOrigin={{ horizontal: 'right', vertical: 'top' }}
                   anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
                 >
@@ -81,7 +80,7 @@ const Header = () => {
                     <ListItemIcon> <Logout fontSize="small" /> </ListItemIcon>
                     Logout
                   </MenuItem>
-              </Menu>
+                </Menu>
               </div>
 
               <div className="myAccWrapper">
