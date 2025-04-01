@@ -71,16 +71,118 @@ const Header = () => {
                   <div className='head pl-3 pb-0'>
                     <h4>Orders (12)</h4>
                   </div>
-                  <Divider className="mb-2"/>
+                  <Divider className="mb-1"/>
                   <MenuItem onClick={handleClosenotificationsDrop}>
-                    <div className='d-flex align-items-center'>
-                      <div className="userImg">
-                        <span className='rounded-circle'>
-                          <img src="https://mironcoder-hotash.netlify.app/images/avatar/01.webp" alt="profile"/>
-                        </span>
+                    <div className='d-flex'>
+                      <div>
+                        <div className="userImg">
+                          <span className='rounded-circle'>
+                            <img src="https://mironcoder-hotash.netlify.app/images/avatar/01.webp" alt="profile"/>
+                          </span>
+                        </div>
                       </div>
                       <div className="dropdownInfo">
-                        <h4><span> <b> Mahmudul </b> added to his favorite list<b> Leather belt steve madden</b></span></h4>
+                        <h4>
+                          <span>
+                            <b>Mahmudul </b>added to his favorite list<b> Leather belt steve madden</b>
+                          </span>
+                        </h4>
+                        <p className="text-sky mb-0">few seconds ago</p>
+                      </div>
+                    </div>
+                  </MenuItem>
+                  <MenuItem onClick={handleClosenotificationsDrop}>
+                    <div className='d-flex'>
+                      <div>
+                        <div className="userImg">
+                          <span className='rounded-circle'>
+                            <img src="https://mironcoder-hotash.netlify.app/images/avatar/01.webp" alt="profile"/>
+                          </span>
+                        </div>
+                      </div>
+                      <div className="dropdownInfo">
+                        <h4>
+                          <span>
+                            <b>Mahmudul </b>added to his favorite list<b> Leather belt steve madden</b>
+                          </span>
+                        </h4>
+                        <p className="text-sky mb-0">few seconds ago</p>
+                      </div>
+                    </div>
+                  </MenuItem>
+                  <MenuItem onClick={handleClosenotificationsDrop}>
+                    <div className='d-flex'>
+                      <div>
+                        <div className="userImg">
+                          <span className='rounded-circle'>
+                            <img src="https://mironcoder-hotash.netlify.app/images/avatar/01.webp" alt="profile"/>
+                          </span>
+                        </div>
+                      </div>
+                      <div className="dropdownInfo">
+                        <h4>
+                          <span>
+                            <b>Mahmudul </b>added to his favorite list<b> Leather belt steve madden</b>
+                          </span>
+                        </h4>
+                        <p className="text-sky mb-0">few seconds ago</p>
+                      </div>
+                    </div>
+                  </MenuItem>
+                  <MenuItem onClick={handleClosenotificationsDrop}>
+                    <div className='d-flex'>
+                      <div>
+                        <div className="userImg">
+                          <span className='rounded-circle'>
+                            <img src="https://mironcoder-hotash.netlify.app/images/avatar/01.webp" alt="profile"/>
+                          </span>
+                        </div>
+                      </div>
+                      <div className="dropdownInfo">
+                        <h4>
+                          <span>
+                            <b>Mahmudul </b>added to his favorite list<b> Leather belt steve madden</b>
+                          </span>
+                        </h4>
+                        <p className="text-sky mb-0">few seconds ago</p>
+                      </div>
+                    </div>
+                  </MenuItem>
+                  <MenuItem onClick={handleClosenotificationsDrop}>
+                    <div className='d-flex'>
+                      <div>
+                        <div className="userImg">
+                          <span className='rounded-circle'>
+                            <img src="https://mironcoder-hotash.netlify.app/images/avatar/01.webp" alt="profile"/>
+                          </span>
+                        </div>
+                      </div>
+                      <div className="dropdownInfo">
+                        <h4>
+                          <span>
+                            <b>Mahmudul </b>added to his favorite list<b> Leather belt steve madden</b>
+                          </span>
+                        </h4>
+                        <p className="text-sky mb-0">few seconds ago</p>
+                      </div>
+                    </div>
+                  </MenuItem>
+                  <MenuItem onClick={handleClosenotificationsDrop}>
+                    <div className='d-flex'>
+                      <div>
+                        <div className="userImg">
+                          <span className='rounded-circle'>
+                            <img src="https://mironcoder-hotash.netlify.app/images/avatar/01.webp" alt="profile"/>
+                          </span>
+                        </div>
+                      </div>
+                      <div className="dropdownInfo">
+                        <h4>
+                          <span>
+                            <b>Mahmudul </b>added to his favorite list<b> Leather belt steve madden</b>
+                          </span>
+                        </h4>
+                        <p className="text-sky mb-0">few seconds ago</p>
                       </div>
                     </div>
                   </MenuItem>

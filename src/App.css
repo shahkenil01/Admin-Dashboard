@@ -105,13 +105,17 @@ header button.rounded-circle:hover svg{
 
 #notifications .MuiPaper-elevation{
   right: 15% !important;
-  width: 250px !important;
+  width: 300px !important;
   left: auto !important;
   top: 70px !important;}
 
+.dropdown_list li.MuiButtonBase-root{
+  background: #ebf6ff !important;
+  color: #000 !important;
+  padding: 10px 15px !important;}
 .dropdown_list .head {
-  padding: 10px 0;}
-.dropdown_list h4{
+  padding: 10px 0px;}
+.dropdown_list .head h4{
   font-size: 17px;
   font-weight: 600;
   color: #403e57;}
@@ -119,6 +123,18 @@ header button.rounded-circle:hover svg{
 .dropdownInfo{
   padding-left: 15px;}
 .dropdownInfo h4{
-  font-size: 14px;}
+  font-size: 13px;
+  font-weight: 500;
+  white-space: break-spaces;
+  line-height: 20px;
+  margin-top: 0px;}
 .dropdownInfo h4 b{
-  font-weight: 500;}
+  font-weight: 600;
+  margin-right: 5px;}
+.dropdownInfo p{
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 0px;}
+
+.text-sky{
+  color: #0858f7;}
