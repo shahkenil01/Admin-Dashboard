@@ -9,8 +9,12 @@ import { MdOutlineLightMode } from 'react-icons/md';
 import { FaRegBell } from 'react-icons/fa6';
 
 import { Menu, MenuItem, ListItemIcon } from "@mui/material";
-import { Logout, Settings, PersonAdd } from "@mui/icons-material";
+import { Logout, PersonAdd } from "@mui/icons-material";
 import { IoShieldHalfSharp } from "react-icons/io5";
+console.log("ENV VARIABLES:", process.env);
+
+const userName = process.env.REACT_APP_USER_NAME || "User";
+const userHandle = process.env.REACT_APP_USER_HANDLE || "@user";
 
 const Header = () => {
   const [anchorEl, setAnchorEl] = 
@@ -57,8 +61,8 @@ const Header = () => {
                   </div>
 
                   <div className="userInfo">
-                    <h4>Kenil Shah</h4>
-                    <p className="mb-0">@Kenil</p>
+                    <h4>{userName}</h4>
+                    <p className="mb-0">{userHandle}</p>
                   </div>
                 </Button>
 
