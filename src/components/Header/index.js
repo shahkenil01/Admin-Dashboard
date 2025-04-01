@@ -13,15 +13,24 @@ import { Logout, PersonAdd } from "@mui/icons-material";
 import { IoShieldHalfSharp } from "react-icons/io5";
 
 const Header = () => {
-  const [anchorEl, setAnchorEl] = 
-  useState(null);
-  const open = Boolean(anchorEl);
+  const [anchorEl, setAnchorEl] = useState(null);
+  const [IsOpennotificationDrop, setIsOpennotificationDrop] = useState(false);
+  const [openNotifications, setOpenNotifications] = useState(false);
+
+  const openMyAcc = Boolean(anchorEl);
 
   const handleOpenMyAccDrop = (event) => {
     setAnchorEl(event.currentTarget);
   };
   const handleCloseMyAccDrop = () => {
     setAnchorEl(null);
+  };
+
+  const handleOpennotificationsDrop = () => {
+    setOpenNotifications(true);
+  };
+  const handleClosenotificationsDrop = () => {
+    setOpenNotifications(false);
   };
 
   return (
@@ -43,10 +52,37 @@ const Header = () => {
               <SearchBox />
             </div>
 
+            {/* User Info Section */}
             <div className="col-sm-7 d-flex align-items-center justify-content-end part3">
 
               <Button className="rounded-circle mr-3"> <MdOutlineLightMode /> </Button>
-              <Button className="rounded-circle mr-3"> <FaRegBell /> </Button>
+              <Button className="rounded-circle mr-3" onClick={handleOpennotificationsDrop}> <FaRegBell /> </Button>
+
+              <div className='dropdownWrapper postion-relative'>
+              <Menu
+                  anchorEl={IsOpennotificationDrop}
+                  className="notifications"
+                  id="notifications"
+                  open={openNotifications}
+                  onClose={handleClosenotificationsDrop}
+                  onClick={handleClosenotificationsDrop}
+                  transformOrigin={{ horizontal: 'right', vertical: 'top' }}
+                  anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
+                >
+                  <MenuItem onClick={handleClosenotificationsDrop}>
+                    <ListItemIcon> <PersonAdd fontSize="small" /> </ListItemIcon>
+                    My notifications
+                  </MenuItem>
+                  <MenuItem onClick={handleClosenotificationsDrop}>
+                    <ListItemIcon> <IoShieldHalfSharp/> </ListItemIcon>
+                    Reset Password
+                  </MenuItem>
+                  <MenuItem onClick={handleClosenotificationsDrop}>
+                    <ListItemIcon> <Logout fontSize="small" /> </ListItemIcon>
+                    Logout
+                  </MenuItem>
+              </Menu>
+              </div>
 
               <div className="myAccWrapper">
                 <Button className="myAcc d-flex align-items-center" onClick={handleOpenMyAccDrop}>
@@ -65,7 +101,7 @@ const Header = () => {
                 <Menu
                   anchorEl={anchorEl}
                   id="account-menu"
-                  open={open}
+                  open={openMyAcc}
                   onClose={handleCloseMyAccDrop}
                   onClick={handleCloseMyAccDrop}
                   transformOrigin={{ horizontal: 'right', vertical: 'top' }}
