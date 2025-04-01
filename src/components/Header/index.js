@@ -8,7 +8,7 @@ import SearchBox from '../SearchBox';
 import { MdOutlineLightMode } from 'react-icons/md';
 import { FaRegBell } from 'react-icons/fa6';
 
-import { Menu, MenuItem, ListItemIcon } from "@mui/material";
+import { Menu, MenuItem, ListItemIcon, Divider} from "@mui/material";
 import { Logout, PersonAdd } from "@mui/icons-material";
 import { IoShieldHalfSharp } from "react-icons/io5";
 
@@ -61,24 +61,28 @@ const Header = () => {
               <div className='dropdownWrapper position-relative'>
                 <Menu
                   anchorEl={notificationAnchorEl}
-                  className="notifications"
+                  className="notifications dropdown_list"
                   id="notifications"
                   open={openNotifications}
                   onClose={handleClosenotificationsDrop}
                   transformOrigin={{ horizontal: 'right', vertical: 'top' }}
                   anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
                 >
+                  <div className='head pl-3 pb-0'>
+                    <h4>Orders (12)</h4>
+                  </div>
+                  <Divider className="mb-2"/>
                   <MenuItem onClick={handleClosenotificationsDrop}>
-                    <ListItemIcon> <PersonAdd fontSize="small" /> </ListItemIcon>
-                    My notifications
-                  </MenuItem>
-                  <MenuItem onClick={handleClosenotificationsDrop}>
-                    <ListItemIcon> <IoShieldHalfSharp/> </ListItemIcon>
-                    Reset Password
-                  </MenuItem>
-                  <MenuItem onClick={handleClosenotificationsDrop}>
-                    <ListItemIcon> <Logout fontSize="small" /> </ListItemIcon>
-                    Logout
+                    <div className='d-flex align-items-center'>
+                      <div className="userImg">
+                        <span className='rounded-circle'>
+                          <img src="https://mironcoder-hotash.netlify.app/images/avatar/01.webp" alt="profile"/>
+                        </span>
+                      </div>
+                      <div className="dropdownInfo">
+                        <h4><span> <b> Mahmudul </b> added to his favorite list<b> Leather belt steve madden</b></span></h4>
+                      </div>
+                    </div>
                   </MenuItem>
                 </Menu>
               </div>
