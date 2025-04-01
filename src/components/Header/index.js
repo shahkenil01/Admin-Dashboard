@@ -41,24 +41,19 @@ const Header = () => {
 
             {/* Menu and SerchBox Section */}
             <div className="col-sm-3 d-flex align-items-center part2">
-              <Button className="rounded-circle mr-3">
-                <MdMenuOpen />
-              </Button>
+              <Button className="rounded-circle mr-3"> <MdMenuOpen /> </Button>
               <SearchBox />
             </div>
 
             <div className="col-sm-7 d-flex align-items-center justify-content-end part3">
-              <Button className="rounded-circle mr-3">
-                <MdOutlineLightMode />
-              </Button>
-              <Button className="rounded-circle mr-3" onClick={handleClick}>
-                <FaRegBell />
-              </Button>
+              <Button className="rounded-circle mr-3"> <MdOutlineLightMode /> </Button>
+              <Button className="rounded-circle mr-3" onClick={handleClick}> <FaRegBell /> </Button>
                 <Menu
                   anchorEl={anchorEl}
                   id="account-menu"
                   open={open}
                   onClose={handleClose}
+                  onClick={handleClose}
                   slotProps={{
                     paper: {
                       elevation: 0,
@@ -90,29 +85,19 @@ const Header = () => {
                   transformOrigin={{ horizontal: 'right', vertical: 'top' }}
                   anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
                 >
-                  <MenuItem onClick={handleClose}>
-                    <Avatar /> Profile
-                  </MenuItem>
-                  <MenuItem onClick={handleClose}>
-                    <Avatar /> My account
-                  </MenuItem>
+                  <MenuItem onClick={handleClose}> <Avatar /> Profile </MenuItem>
+                  <MenuItem onClick={handleClose}> <Avatar /> My account </MenuItem>
                   <Divider />
                   <MenuItem onClick={handleClose}>
-                    <ListItemIcon>
-                      <PersonAdd fontSize="small" />
-                    </ListItemIcon>
+                    <ListItemIcon> <PersonAdd fontSize="small" /> </ListItemIcon>
                     Add another account
                   </MenuItem>
                   <MenuItem onClick={handleClose}>
-                    <ListItemIcon>
-                      <Settings fontSize="small" />
-                    </ListItemIcon>
+                    <ListItemIcon> <Settings fontSize="small" /> </ListItemIcon>
                     Settings
                   </MenuItem>
                   <MenuItem onClick={handleClose}>
-                    <ListItemIcon>
-                      <Logout fontSize="small" />
-                    </ListItemIcon>
+                    <ListItemIcon> <Logout fontSize="small" /> </ListItemIcon>
                     Logout
                   </MenuItem>
                 </Menu>
@@ -121,10 +106,7 @@ const Header = () => {
                 <Button className="myAcc d-flex align-items-center">
                   <div className="userImg">
                     <span className="rounded-circle">
-                      <img
-                        src="https://mironcoder-hotash.netlify.app/images/avatar/01.webp"
-                        alt="profile"
-                      />
+                      <img src="https://mironcoder-hotash.netlify.app/images/avatar/01.webp" alt="profile"/>
                     </span>
                   </div>
 
