@@ -209,7 +209,7 @@ const Header = () => {
                   </div>
 
                   <div className="pl-3 pr-3 pt-2 pb-1 w-100">
-                    <Button className='btn-blue w-100'>View all notifications</Button>
+                    <Button className='btn-blue w-100' onClick={handleClosenotificationsDrop}>View all notifications</Button>
                   </div>
 
                 </Menu>
