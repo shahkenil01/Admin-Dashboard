@@ -504,6 +504,9 @@ header button.rounded-circle:hover svg{
   text-transform: capitalize;
   color: #403e57;}
 
+.table-responsive::-webkit-scrollbar-thumb{
+  background: #ccc !important;}
+
 .table .thead-dark th{
   background-color: #1866ee;
   border-color: rgba(255,255,255,0.1);
