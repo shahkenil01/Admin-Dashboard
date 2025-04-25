@@ -6,10 +6,6 @@ const Login = ()=>{
 
   const context = useContext(MyContext)
 
-  useEffect(()=>{
-    context.setisHideSidebarAndHeader(true);
-  })
-
   return(
     <section className="loginSection">
       <div className="loginBox">

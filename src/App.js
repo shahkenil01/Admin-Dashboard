@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css"
 import './App.css';
 import Dashboard from './pages/Dashboard';
@@ -9,30 +9,29 @@ import Login from './pages/login';
 
 const MyContext = createContext();
 
-function App() {
+function AppWrapper() {
+
+  const location = useLocation();
+  const isLoginPage = location.pathname === "/login";
 
   const [isToggleSidebar, setIsToggleSidebar] = useState(false)
   const[isLogin, setIsLogin] = useState(false);
-  const[isHideSidebarAndHeader, setisHideSidebarAndHeader] = useState(false);
 
 const values={
   isToggleSidebar,
   setIsToggleSidebar,
   isLogin,
-  setIsLogin,
-  isHideSidebarAndHeader,
-  setisHideSidebarAndHeader
+  setIsLogin
 }
 
   return (
-    <BrowserRouter>
       <MyContext.Provider value={values}>
         {
-          isHideSidebarAndHeader !== true && <Header/>
+          !isLoginPage && <Header/>
         }
         <div className='main d-flex'>
           {
-            isHideSidebarAndHeader !== true && 
+            !isLoginPage && 
             <div className={`sidebarWrapper ${isToggleSidebar==true ? 'toggle' : ''}`}>
               <Sidebar/>
             </div>
@@ -47,6 +46,13 @@ const values={
           </div>
         </div>
       </MyContext.Provider>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <AppWrapper />
     </BrowserRouter>
   );
 }
