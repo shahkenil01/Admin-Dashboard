@@ -25,6 +25,10 @@ body{
   color: #fff !important;
   border-radius: 5px !important;
   text-transform: capitalize !important;} 
+.btn-lg{
+  padding: 6px 20px !important;}
+.btn-round{
+  border-radius: 30px !important;}
 
 header{
   width: 100%;
@@ -586,3 +590,8 @@ table td .new, table td .old {
   font-weight: 500;
   margin-bottom: 0px;
   color: #403e57;}
+
+.loginSection{
+  width: 100%;
+  height: 100vh;
+  padding: 35px 25px;}

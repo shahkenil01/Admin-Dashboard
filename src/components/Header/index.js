@@ -221,6 +221,9 @@ const Header = () => {
                 </Menu>
               </div>
 
+              {
+                context.isLogin!==true ? <Link to={'/login'}> <Button className="btn-blue btn-lg btn-round">Sign In</Button> </Link>
+                :
               <div className="myAccWrapper">
                 <Button className="myAcc d-flex align-items-center" onClick={handleOpenMyAccDrop}>
                   <div className="userImg">
@@ -259,6 +262,9 @@ const Header = () => {
                 </Menu>
 
               </div>
+              }
+              
+
             </div>
           </div>
         </div>
