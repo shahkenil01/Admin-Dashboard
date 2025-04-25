@@ -28,11 +28,13 @@ body{
 header{
   width: 100%;
   height: 70px;
-  background: #ffffffe6;
+  background: rgba(255,255,255,0.9);
   position: fixed;
   top: 0px;
   left: 0px;
-  z-index: 1000;}
+  z-index: 1000;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);}
 header .logo{
   text-decoration: none;}
 header .logo img{
@@ -539,7 +541,7 @@ table td .info h6{
   white-space: nowrap;
   font-size: 14px;
   font-weight: 600;
-  margin-bottom: 5px;}
+  margin-bottom: 0px;}
 table td .info p{
   overflow: hidden;
   text-overflow: ellipsis;
@@ -555,4 +557,12 @@ table td .new, table td .old {
   display: block;
   width: 100%;}
 
-  
+.tableFooter{
+  padding-bottom: 20px;}
+.tableFooter .pagination{
+  margin-left: auto;}
+.tableFooter p{
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0px;
+  color: #403e57;}
