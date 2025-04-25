@@ -9,7 +9,9 @@ const Login = ()=>{
   return(
     <section className="loginSection">
       <div className="loginBox">
-        <div className='logo text-center'><img src={Logo}/></div>
+        <div className='logo text-center'>
+          <img src={Logo}/>
+        </div>
       </div>
     </section>
   )

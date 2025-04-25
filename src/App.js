@@ -37,7 +37,7 @@ const values={
             </div>
           }
 
-          <div className={`content ${isToggleSidebar==true ? 'toggle' : ''}`}>
+          <div className={`content  ${isLoginPage ? 'full' : ''} ${isToggleSidebar==true ? 'toggle' : ''}`}>
             <Routes>
               <Route path="/" exact={true} element={<Dashboard/>}/>
               <Route path="/dashboard" exact={true} element={<Dashboard/>}/>
