@@ -633,11 +633,15 @@ table td .new, table td .old {
   font-weight: 600;
   height: 45px;
   padding-left: 40px;}
+.loginSection .loginBox .wrapper .form-group.focus .icon svg{
+  color: #0858f7 !important;}
 .loginSection .loginBox .wrapper .form-control:focus{
   border: 1px solid #0858f7;}
-.loginSection .loginBox .wrapper .icon{
+.loginSection .loginBox .wrapper .form-group .icon{
   position: absolute;
   top: 3px;
   left: 10px;
   z-index: 100;
-  font-size: 25px;}
+  font-size: 23px;}
+.loginSection .loginBox .wrapper .form-group .icon svg{
+  color: #5e5d72;}
