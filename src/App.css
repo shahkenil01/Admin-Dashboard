@@ -29,9 +29,16 @@ body{
   padding: 6px 20px !important;}
 .btn-big{
   padding: 10px 25px !important;
-  font-size: 14px !important;}
+  font-size: 16px !important;}
 .btn-round{
   border-radius: 30px !important;}
+
+.link{
+  color: #5e5d72;
+  font-weight: 800;}
+.link:hover{
+  color: #0858f7;
+  text-decoration: none;}
 
 .full{
   max-width: 100% !important;
@@ -637,6 +644,8 @@ table td .new, table td .old {
   font-weight: 600;
   height: 45px;
   padding-left: 40px;}
+.loginSection .loginBox .wrapper .form-group {
+  margin-bottom: 18px;}
 .loginSection .loginBox .wrapper .form-group.focus .icon svg{
   color: #0858f7 !important;}
 .loginSection .loginBox .wrapper .form-control:focus{
@@ -658,3 +667,26 @@ table td .new, table td .old {
 .toggleShowPassword svg{
   font-size: 22px;
   color: #5e5d72;}
+
+.loginSection .loginBox .wrapper .link{
+  font-size: 14px;}
+
+.loginSection .loginBox .wrapper .or span.line {
+  display: block;
+  width: 35%;
+  height: 1px;
+  background: rgba(0,0,0,0.2);}
+.loginSection .loginBox .wrapper .or span.txt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 50%;}
+
+.loginWithGoogle {
+  text-transform: capitalize !important;
+  font-weight: 700 !important;}

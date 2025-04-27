@@ -7,6 +7,8 @@ import { RiLockPasswordFill } from "react-icons/ri";
 import { IoMdEye } from "react-icons/io";
 import { IoMdEyeOff } from "react-icons/io";
 import { Button } from '@mui/material';
+import { Link } from 'react-router-dom';
+import Google_Icons from '../../assets/images/Google_Icons.png'
 
 const Login = ()=>{
 
@@ -30,7 +32,7 @@ const Login = ()=>{
 
           <div className='wrapper mt-3 card border'>
             <form>
-              <div className={`form-group mb-3 position-relative ${inputIndex===0 && 'focus'}`}>
+              <div className={`form-group position-relative ${inputIndex===0 && 'focus'}`}>
                 <span className='icon'><MdEmail/></span>
                 <input type='email'
                   className='form-control' 
@@ -39,7 +41,7 @@ const Login = ()=>{
                   onBlur={()=>setInputIndex(null)}/>
               </div>
 
-              <div className={`form-group mb-3 position-relative ${inputIndex===1 && 'focus'}`}>
+              <div className={`form-group position-relative ${inputIndex===1 && 'focus'}`}>
                 <span className='icon'><RiLockPasswordFill/></span>
                 <input type={`${isShowPassword===true ? 'text' : 'password'}`}
                   className='form-control' 
@@ -57,6 +59,23 @@ const Login = ()=>{
               <div className='form-group'>
                 <Button className="btn-blue btn-lg btn-big w-100">Sign In</Button>
               </div>
+
+              <div className='form-group text-center'>
+                <Link to={'/forgot-password'} className='link'>FORGOT PASSWORD</Link>
+
+              <div class="d-flex align-items-center justify-content-center or mt-3 mb-3">
+                <span class="line"></span>
+                <span class="txt">or</span>
+                <span class="line"></span>
+              </div>
+
+              <Button variant='outlined' className="w-100 btn-lg btn-big loginWithGoogle">
+                <img src={Google_Icons} width="25px"/> &nbsp; Sign In with Google
+              </Button>
+
+              </div>
+
+              
             </form>
           </div>
 
