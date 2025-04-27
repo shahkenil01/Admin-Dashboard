@@ -60,7 +60,7 @@ const Login = ()=>{
                 <Button className="btn-blue btn-lg btn-big w-100">Sign In</Button>
               </div>
 
-              <div className='form-group text-center'>
+              <div className='form-group text-center mb-0'>
                 <Link to={'/forgot-password'} className='link'>FORGOT PASSWORD</Link>
 
               <div class="d-flex align-items-center justify-content-center or mt-3 mb-3">
@@ -74,9 +74,13 @@ const Login = ()=>{
               </Button>
 
               </div>
+            </form> 
+          </div>
 
-              
-            </form>
+          <div className="wrapper mt-3 card border footer p-3">
+            <span className="text-center">Don't have an account?
+              <Link to={'/signUp'} className="link color ml-2" >Register</Link>
+            </span>
           </div>
 
         </div>

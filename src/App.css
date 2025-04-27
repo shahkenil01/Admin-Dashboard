@@ -39,6 +39,8 @@ body{
 .link:hover{
   color: #0858f7;
   text-decoration: none;}
+.link.color{
+  color: #0858f7;}
 
 .full{
   max-width: 100% !important;
@@ -629,7 +631,7 @@ table td .new, table td .old {
   margin: auto;}
 .loginSection .loginBox .wrapper{
   width: 100%;
-  height: 410px;
+  height: auto;
   background: #f0f0f0;
   position: relative;
   z-index: 100;
