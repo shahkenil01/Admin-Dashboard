@@ -7,7 +7,6 @@ import { MdOutlineMenu } from 'react-icons/md';
 import SearchBox from '../SearchBox';
 import { MdOutlineLightMode } from 'react-icons/md';
 import { FaRegBell } from 'react-icons/fa6';
-
 import { Menu, MenuItem, ListItemIcon, Divider} from "@mui/material";
 import { Logout, PersonAdd } from "@mui/icons-material";
 import { IoShieldHalfSharp } from "react-icons/io5";
@@ -61,7 +60,9 @@ const Header = () => {
 
             <div className="col-sm-7 d-flex align-items-center justify-content-end part3">
 
-              <Button className="rounded-circle mr-3"> <MdOutlineLightMode /> </Button>
+              <Button className="rounded-circle mr-3" onClick={()=>context.setThemeMode(!context.themeMode)}> 
+                <MdOutlineLightMode /> 
+              </Button>
               <Button className="rounded-circle mr-3" onClick={handleOpennotificationsDrop}> <FaRegBell /> </Button>
 
               <div className='dropdownWrapper position-relative'>

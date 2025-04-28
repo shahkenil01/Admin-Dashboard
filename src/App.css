@@ -85,6 +85,21 @@ header button.rounded-circle svg{
 header button.rounded-circle:hover svg{
   color: #0858f7}
 
+body.dark header{
+  background: #112143;}
+body.dark header button.rounded-circle{
+  background: #112755;}
+body.dark header button.rounded-circle svg{
+  color: #fff;}
+body.dark .searchBox{
+  background: #12254e;}
+body.dark .searchBox input,body.dark .searchBox input::-webkit-input-placeholder,body.dark .searchBox svg{
+  color: rgba(255,255,255,0.7);}
+body.dark .logo span{
+  color: #ffffffe6;}
+body.dark .myAcc .userInfo * {
+  color: rgba(255, 255, 255, 0.8);}
+
 .searchBox{
   width: 450px;
   height: 40px;
