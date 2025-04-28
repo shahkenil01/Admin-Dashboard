@@ -86,7 +86,7 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/">
+          <Link to="/login">
             <Button className={`w-100 ${activeTab === 6 ? 'active' : ''}`} onClick={() => handleTabClick(6)}>
               <span className='icon'><FaUser /></span>
               Login
@@ -94,7 +94,7 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/">
+          <Link to="/signUp">
             <Button className={`w-100 ${activeTab === 7 ? 'active' : ''}`} onClick={() => handleTabClick(7)}>
               <span className='icon'><FaUser /></span>
               Sign Up

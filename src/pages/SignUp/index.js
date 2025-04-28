@@ -47,9 +47,11 @@ const SignUp = () => {
                 It has survived not only five centuries
               </p>
               <div className="w-100 mt-4">
-                <Button className="btn-blue btn-lg btn-big">
-                  <TiHome style={{ marginRight: '8px', fontSize: '20px', marginTop: '-3px' }} />Go To Home
-                </Button>
+                <Link to={'/'}>
+                  <Button className="btn-blue btn-lg btn-big">
+                    <TiHome style={{ marginRight: '8px', fontSize: '20px', marginTop: '-3px' }} />Go To Home
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
