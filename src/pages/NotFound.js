@@ -8,8 +8,7 @@ function NotFound() {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      padding: '20px'
-    }}>
+      padding: '20px'}}>
       <div style={{
         background: '#fff',
         borderRadius: '8px',
@@ -17,21 +16,19 @@ function NotFound() {
         maxWidth: '400px',
         width: '100%',
         textAlign: 'center',
-        boxShadow: '0 0 10px rgba(0,0,0,0.1)'
-      }}>
+        boxShadow: '0 0 10px rgba(0,0,0,0.1)'}}>
         <h2 style={{
           marginBottom: '15px',
           fontSize: '24px',
           fontWeight: 'bold',
-          color: '#24292f'
-        }}>Page not found</h2>
+          color: '#24292f'}}>
+          Page not found
+        </h2>
         <p style={{
           color: '#57606a',
           fontSize: '14px',
-          marginBottom: '20px'
-        }}>
-          Looks like you've followed a broken link or entered a URL that doesn't exist on this site.<br/>
-          <b><h3>Vishesh lode sahi Path pe ja na BC</h3></b>
+          marginBottom: '20px'}}>
+          Looks like you've followed a broken link or entered a URL that doesn't exist on this site.
         </p>
         <Link to="/" style={{
           marginTop: '10px',
@@ -41,8 +38,7 @@ function NotFound() {
           color: '#fff',
           borderRadius: '6px',
           textDecoration: 'none',
-          fontSize: '14px'
-        }}>
+          fontSize: '14px'}}>
           Go to Home
         </Link>
       </div>
