@@ -635,7 +635,7 @@ table td .new, table td .old {
   background: #f0f0f0;
   position: relative;
   z-index: 100;
-  padding: 35px;}
+  padding: 35px 25px 15px 25px;}
 
 .loginSection .loginBox .wrapper .form-control{
   background: #fff;
@@ -696,14 +696,12 @@ table td .new, table td .old {
 .signUpSection{
   background: #f1f1f1;
   padding: 0px;
-  height: auto;
-  height: 100vh;
-  overflow: hidden;}
+  height: auto;}
 .signUpSection .loginBox{
   background: #e4e4e4;
   position: relative;
   width: 100% !important;
-  padding: 25px 5px !important;
+  padding: 20px 5px 0.4px 5px !important;
   z-index: 100}
 .signUpSection .loginBox .wrapper{
   border: 0px;

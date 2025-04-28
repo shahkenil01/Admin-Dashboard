@@ -63,7 +63,7 @@ const SignUp = () => {
                 <h5 className="font-weight-bold">Register a new account</h5>
               </div>
 
-              <div className="wrapper mt-3 card border">
+              <div className="wrapper mt-3 card">
                 <form>
                   <div className={`form-group position-relative ${inputIndex === 0 && 'focus'}`}>
                     <span className="icon"><FaUserCircle /></span>

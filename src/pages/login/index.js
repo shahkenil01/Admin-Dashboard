@@ -1,4 +1,4 @@
-import { useEffect, useContext, useState } from 'react';
+import { useContext, useState } from 'react';
 import Logo from '../../assets/images/logo.png';
 import { MyContext } from '../../App';
 import pattern from '../../assets/images/pattern.webp';
@@ -13,7 +13,7 @@ import Google_Icons from '../../assets/images/Google_Icons.png'
 const Login = ()=>{
 
   const [inputIndex, setInputIndex] = useState(null);
-  const [isShowPassword, setisShowPassword] = useState(false);
+  const [isShowPassword, setIsShowPassword] = useState(false);
   const context = useContext(MyContext);
 
   const focusInput=(index)=>{
@@ -43,17 +43,24 @@ const Login = ()=>{
 
               <div className={`form-group position-relative ${inputIndex===1 && 'focus'}`}>
                 <span className='icon'><RiLockPasswordFill/></span>
-                <input type={`${isShowPassword===true ? 'text' : 'password'}`}
-                  className='form-control' 
-                  placeholder='enter your password' 
-                  onFocus={()=>focusInput(1)}
-                  onBlur={()=>setInputIndex(null)}/>
+                <input className="form-control" placeholder="enter your password" 
+                  type={isShowPassword ? 'text' : 'password'}
+                  onFocus={() => focusInput(1)}
+                  onBlur={(e) => {
+                    if (!e.relatedTarget || !e.relatedTarget.classList.contains('toggleShowPassword')) {
+                      setInputIndex(null);
+                    }
+                  }}/>
 
-                  <span className='toggleShowPassword' onClick={()=>setisShowPassword(!isShowPassword)}>
-                  {
-                    isShowPassword===true ? <IoMdEyeOff/> : <IoMdEye/>
-                  }
+                {inputIndex === 1 && (
+                  <span className="toggleShowPassword" tabIndex="0"
+                    onMouseDown={(e) => {
+                      e.preventDefault();
+                      setIsShowPassword(!isShowPassword);
+                    }}>
+                    {isShowPassword ? <IoMdEyeOff /> : <IoMdEye />}
                   </span>
+                )}
               </div>
 
               <div className='form-group'>
@@ -70,7 +77,7 @@ const Login = ()=>{
               </div>
 
               <Button variant='outlined' className="w-100 btn-lg btn-big loginWithGoogle">
-                <img src={Google_Icons} width="25px"/> &nbsp; Sign In with Google
+                <img src={Google_Icons} width="25px" alt='Icon'/> &nbsp; Sign In with Google
               </Button>
 
               </div>
