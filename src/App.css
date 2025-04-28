@@ -692,3 +692,29 @@ table td .new, table td .old {
 .loginWithGoogle {
   text-transform: capitalize !important;
   font-weight: 700 !important;}
+
+.signUpSection{
+  background: #f1f1f1;
+  padding: 0px;
+  height: auto;
+  height: 100vh;
+  overflow: hidden;}
+.signUpSection .loginBox{
+  background: #e4e4e4;
+  position: relative;
+  width: 100% !important;
+  padding: 25px 5px !important;
+  z-index: 100}
+.signUpSection .loginBox .wrapper{
+  border: 0px;
+  background: transparent;
+  padding-top: 10px !important;}
+
+.signUpSection .part1{
+  padding-left: 100px;
+  padding-right: 100px;}
+.signUpSection .part1 h1 {
+  font-size: 50px;
+  font-weight: 800;}
+.signUpSection .part1 p {
+  font-size: 18px;}
