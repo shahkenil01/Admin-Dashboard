@@ -128,6 +128,8 @@ body.dark .main .sidebarWrapper .sidebar ul .submenu li a:hover{
 body.dark .main .sidebarWrapper .sidebar ul li button.active .icon svg{
   color: #0858f7 !important;
   fill: #0858f7 !important;}
+/*body.dark .logoutWrapper .loginBox{
+  background-image: linear-gradient (rgba(var(#183e8c,#163474),25%)) !important;}*/
 
 .searchBox{
   width: 450px;
