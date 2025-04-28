@@ -1,6 +1,5 @@
-import { useContext, useState } from 'react';
+import { useState } from 'react';
 import Logo from '../../assets/images/logo.png';
-import { MyContext } from '../../App';
 import pattern from '../../assets/images/pattern.webp';
 import { MdEmail } from "react-icons/md";
 import { RiLockPasswordFill } from "react-icons/ri";
@@ -14,7 +13,6 @@ const Login = ()=>{
 
   const [inputIndex, setInputIndex] = useState(null);
   const [isShowPassword, setIsShowPassword] = useState(false);
-  const context = useContext(MyContext);
 
   const focusInput=(index)=>{
     setInputIndex(index);

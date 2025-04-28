@@ -8,16 +8,13 @@ import { IoNotifications } from "react-icons/io5";
 import { IoIosSettings } from "react-icons/io";
 import { FaUser } from "react-icons/fa";
 import { Link } from 'react-router-dom';
-import { useContext, useState } from 'react';
+import { useState } from 'react';
 import { IoMdLogOut } from "react-icons/io";
-import { MyContext } from '../../App';
 
 const Sidebar = () => {
 
   const [activeTab, setActiveTab] = useState(0);
   const [isOpen, setIsOpen] = useState(Array(12).fill(false));
-
-  const context = useContext(MyContext);
 
   const handleTabClick = (index) => {
     setActiveTab(index);

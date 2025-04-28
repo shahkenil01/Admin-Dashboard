@@ -1,4 +1,4 @@
-import { useState, useContext, useRef } from 'react';
+import { useState, useRef } from 'react';
 import Logo from '../../assets/images/logo.png';
 import pattern from '../../assets/images/pattern.webp';
 import { MdEmail } from "react-icons/md";
@@ -9,7 +9,6 @@ import { IoMdEye, IoMdEyeOff } from "react-icons/io";
 import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 import Google_Icons from '../../assets/images/Google_Icons.png';
-import { MyContext } from '../../App';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import { TiHome } from "react-icons/ti";
@@ -18,8 +17,6 @@ const SignUp = () => {
   const [inputIndex, setInputIndex] = useState(null);
   const [isShowPassword, setIsShowPassword] = useState(false);
   const [isShowConfirmPassword, setIsShowConfirmPassword] = useState(false);
-
-  const context = useContext(MyContext);
 
   const passwordRef = useRef(null);
   const confirmPasswordRef = useRef(null);
