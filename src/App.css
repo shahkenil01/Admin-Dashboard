@@ -93,25 +93,41 @@ body.dark header button.rounded-circle svg{
   color: #fff;}
 body.dark .searchBox{
   background: #12254e;}
-body.dark .searchBox input,body.dark .searchBox input::-webkit-input-placeholder,body.dark .searchBox svg{
+body.dark .searchBox input,
+body.dark .searchBox input::-webkit-input-placeholder,
+body.dark .searchBox svg{
   color: rgba(255,255,255,0.7);}
 body.dark .logo span{
   color: #ffffffe6;}
-body.dark .myAcc .userInfo *,body.dark .dropdown_list .head h4{
+body.dark .myAcc .userInfo *{
   color: rgba(255, 255, 255, 0.8) !important;}
 body.dark .MuiPaper-elevation{
   background-color: #12254e;}
-body.dark .MuiPaper-elevation li *,body.dark .MuiPaper-elevation li{
+body.dark .MuiPaper-elevation li *,
+body.dark .MuiPaper-elevation li{
   color: rgba(255, 255, 255, 0.8);}
 body.dark .dropdown_list li.MuiButtonBase-root{
   background-color: #12254e !important;
   background: #12254e !important;}
+body.dark .dropdown_list .head h4{
+  color: rgba(255, 255, 255, 0.9) !important;}
 body.dark .main .sidebarWrapper .sidebar {
   background: #112143;}
-body.dark .main .sidebarWrapper .sidebar ul li button {
-  color: #fffc !important;}
+body.dark .main .sidebarWrapper .sidebar ul li button, 
+body.dark .main .sidebarWrapper .sidebar ul li button *{
+  color: rgba(255, 255, 255, 0.8) !important;}
+body.dark .main .sidebarWrapper .sidebar ul li button:hover, 
 body.dark .main .sidebarWrapper .sidebar ul li button.active {
-  background: #ffffff1a !important;}
+  background: rgba(255, 255, 255, 0.1) !important;}
+body.dark .main .sidebarWrapper .sidebar ul .submenu::before {
+  background: rgba(255, 255, 255, 0.2) !important;}
+body.dark .main .sidebarWrapper .sidebar ul .submenu li a{
+  color: rgba(255, 255, 255, 0.7) !important;}
+body.dark .main .sidebarWrapper .sidebar ul .submenu li a:hover{
+  color: #0858f7 !important;}
+body.dark .main .sidebarWrapper .sidebar ul li button.active .icon svg{
+  color: #0858f7 !important;
+  fill: #0858f7 !important;}
 
 .searchBox{
   width: 450px;
