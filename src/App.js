@@ -15,7 +15,7 @@ function AppWrapper() {
   const location = useLocation();
 
   const [isToggleSidebar, setIsToggleSidebar] = useState(false);
-  const [isLogin, setIsLogin] = useState(false);
+  const [isLogin, setIsLogin] = useState(true);
   const [themeMode, setThemeMode] = useState(() => {
     const savedTheme = localStorage.getItem('themeMode');
     return savedTheme ? savedTheme === 'light' : true;
