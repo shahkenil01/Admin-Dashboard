@@ -62,7 +62,7 @@ const Header = () => {
             <div className="col-sm-7 d-flex align-items-center justify-content-end part3">
 
               <Button className="rounded-circle mr-3" onClick={()=>context.setThemeMode(!context.themeMode)}> 
-                {context.themeMode ? <IoIosMoon /> : <MdOutlineLightMode />}
+                {context.themeMode ? <MdOutlineLightMode /> : <IoIosMoon />}
               </Button>
               <Button className="rounded-circle mr-3" onClick={handleOpennotificationsDrop}> <FaRegBell /> </Button>
 
