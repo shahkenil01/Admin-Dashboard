@@ -160,9 +160,11 @@ body.dark .dropdownMenu {
 body.dark .dropdownMenu li {
   color: #fffc;}
 body.dark .card {
-  background: #1b2b4d;
+  background: #1b2b4d !important;
   transition: background-color 0.4s ease;
-  border: 1px solid #10214b;}
+  border: 1px solid #10214b !important;}
+body.dark .signUpSection .card{
+  border: transparent !important;}
 body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark h5, body.dark h6, body.dark p {
   color: #fffc !important;}
 body.dark .dropdown-select{
@@ -197,6 +199,27 @@ body.dark table tbody .actions button.success{
   background: #27bf68;}
 body.dark table tbody .actions button.error{
   background: #ff6179;}
+body.dark .loginSection {
+  background: #112142 !important;}
+body.dark form .form-control {
+  background: #071739 !important;
+  border: 1px solid #ffffff1a !important;
+  color: #ffffffb3 !important;}
+body.dark .link {
+  color: #fff9;}
+body.dark {
+  color: #ffffffb3;}
+body.dark .loginSection .loginBox .wrapper .or span.line {
+  background: #ffffff4d !important;}
+body.dark .loginSection .loginBox .wrapper .or span.txt {
+  border: 1px solid #ffffff4d;
+  color: #ffffff80 !important;}
+body.dark .loginSection .loginBox .wrapper .form-control:focus {
+  border: 1px solid #0858f7 !important;}
+body.dark .signUpSection .loginBox {
+  background: #1b2b4d !important;}
+body.dark .MuiSvgIcon-root{
+  color: #fffc !important;}
 
 .searchBox{
   width: 450px;
@@ -794,6 +817,9 @@ table td .new, table td .old {
 
 .loginSection .loginBox .wrapper .link{
   font-size: 14px;}
+.link.color, .link:hover {
+  color: #0055ff !important;
+  text-decoration: none;}
 
 .loginSection .loginBox .wrapper .or span.line {
   display: block;
