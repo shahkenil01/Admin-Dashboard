@@ -16,6 +16,19 @@ body{
 ::-webkit-scrollbar-track{
   background: transparent;}
 
+body:not(.dark),
+body:not(.dark) table,
+body:not(.dark) .table tbody td,
+body:not(.dark) .dropdown-menu {
+  transition: background-color 0.2s ease, color 0.2s ease;}
+body:not(.dark) header button.rounded-circle,
+body:not(.dark) header button.rounded-circle svg,
+body:not(.dark) .card,
+body:not(.dark) .main .sidebarWrapper .sidebar ul li button,
+body:not(.dark) .main .sidebarWrapper .sidebar ul li button.active,
+body:not(.dark) .main .sidebarWrapper .sidebar ul li button:hover {
+  transition: none !important;}
+
 .text-sky{
   color: #0858f7;}
 .btn-blue{
@@ -85,8 +98,17 @@ header button.rounded-circle svg{
 header button.rounded-circle:hover svg{
   color: #0858f7}
 
+body.dark header,
+body.dark header button.rounded-circle,
+body.dark header button.rounded-circle svg,
+body.dark .main .sidebarWrapper .sidebar,
+body.dark .main .sidebarWrapper .sidebar ul li button,
+body.dark .main .sidebarWrapper .sidebar ul li button:hover,
+body.dark .main .sidebarWrapper .sidebar ul li button.active {
+  transition: none !important;}
 body.dark {
-  background: #071739 !important;}
+  background: #071739 !important;
+  transition: background-color 0.2s ease;}
 body.dark header{
   background: #112143;}
 body.dark header button.rounded-circle{
@@ -139,6 +161,7 @@ body.dark .dropdownMenu li {
   color: #fffc;}
 body.dark .card {
   background: #1b2b4d;
+  transition: background-color 0.2s ease;
   border: 1px solid #10214b;}
 body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark h5, body.dark h6, body.dark p {
   color: #fffc !important;}
@@ -149,7 +172,8 @@ body.dark .dropdown-select{
 body.dark .dropdown-menu{
   background: #12254e !important;
   border: none !important;}
-body.dark .dropdown-item, body.dark .dropdown-icon {
+body.dark .dropdown-item, 
+body.dark .dropdown-icon {
   color: #fffc;}
 body.dark table td {
   color: #ffffff85 !important;}
@@ -588,6 +612,13 @@ body.dark table tbody .actions button.error{
   font-style: italic;}
 .dropdown-item:hover {
   background-color: rgba(25, 118, 210, 0.08);}
+.dropdown-item:active,
+.dropdown-item:focus {
+  color: #000 !important;}
+body.dark .dropdown-item:active,
+body.dark .dropdown-item:focus {
+  color: #cccf !important;}
+
 .selected {
   background-color: rgba(25, 118, 210, 0.14);}
 
