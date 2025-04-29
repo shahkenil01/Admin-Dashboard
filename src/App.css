@@ -98,128 +98,74 @@ header button.rounded-circle svg{
 header button.rounded-circle:hover svg{
   color: #0858f7}
 
-body.dark header,
-body.dark header button.rounded-circle,
-body.dark header button.rounded-circle svg,
-body.dark .main .sidebarWrapper .sidebar,
-body.dark .main .sidebarWrapper .sidebar ul li button,
-body.dark .main .sidebarWrapper .sidebar ul li button:hover,
-body.dark .main .sidebarWrapper .sidebar ul li button.active {
-  transition: none !important;}
-body.dark {
-  background: #071739 !important;
-  transition: background-color 0.4s ease;}
-body.dark header{
-  background: #112143;}
-body.dark header button.rounded-circle{
-  background: #112755;}
-body.dark header button.rounded-circle svg{
-  color: #fff;}
-body.dark .searchBox{
-  background: #12254e;}
-body.dark .searchBox input,
-body.dark .searchBox input::-webkit-input-placeholder,
-body.dark .searchBox svg{
-  color: rgba(255,255,255,0.7);}
-body.dark .logo span{
-  color: #ffffffe6;}
-body.dark .myAcc .userInfo *{
-  color: rgba(255, 255, 255, 0.8) !important;}
-body.dark .MuiPaper-elevation{
-  background-color: #12254e;}
-body.dark .MuiPaper-elevation li *,
-body.dark .MuiPaper-elevation li{
-  color: rgba(255, 255, 255, 0.8);}
-body.dark .dropdown_list li.MuiButtonBase-root{
-  background-color: #12254e !important;
-  background: #12254e !important;}
-body.dark .dropdown_list .head h4{
-  color: rgba(255, 255, 255, 0.9) !important;}
-body.dark .main .sidebarWrapper .sidebar {
-  background: #112143;}
-body.dark .main .sidebarWrapper .sidebar ul li button, 
-body.dark .main .sidebarWrapper .sidebar ul li button *{
-  color: rgba(255, 255, 255, 0.8) !important;}
-body.dark .main .sidebarWrapper .sidebar ul li button:hover, 
-body.dark .main .sidebarWrapper .sidebar ul li button.active {
-  background: rgba(255, 255, 255, 0.1) !important;}
-body.dark .main .sidebarWrapper .sidebar ul .submenu::before {
-  background: rgba(255, 255, 255, 0.2) !important;}
-body.dark .main .sidebarWrapper .sidebar ul .submenu li a{
-  color: rgba(255, 255, 255, 0.7) !important;}
-body.dark .main .sidebarWrapper .sidebar ul .submenu li a:hover{
-  color: #0858f7 !important;}
-body.dark .main .sidebarWrapper .sidebar ul li button.active .icon svg{
-  color: #0858f7 !important;
-  fill: #0858f7 !important;}
-body.dark .logoutWrapper .logoutBox{
-  background-image: linear-gradient(#183e8c, #163474);}
-body.dark .dropdownMenu {
-  background: #1b2b4d !important;
-  border: 1px solid #10214b !important;}
-body.dark .dropdownMenu li {
-  color: #fffc;}
-body.dark .card {
-  background: #1b2b4d !important;
-  transition: background-color 0.4s ease;
-  border: 1px solid #10214b !important;}
-body.dark .signUpSection .card{
-  border: transparent !important;}
-body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark h5, body.dark h6, body.dark p {
-  color: #fffc !important;}
-body.dark .dropdown-select{
-  background: transparent !important;
-  border: 1px solid rgba(228, 218, 218, 0.603) !important;
-  color: #fffc;}
-body.dark .dropdown-menu{
-  background: #12254e !important;
-  border: none !important;}
-body.dark .dropdown-item, 
-body.dark .dropdown-icon {
-  color: #fffc;}
-body.dark table td {
-  color: #ffffff85 !important;}
-body.dark table, 
-body.dark table th, 
-body.dark table td {
-  border-color: #ffffff33;}
-body.dark tbody tr:nth-child(odd) {
-  background-color: #16223e;}
-body.dark .pagination *{
-  color: #cccf !important;}
-body.dark .MuiPaginationItem-root:hover {
-  background: #fff3 !important;}
-body.dark .table-responsive::-webkit-scrollbar-thumb{
-  background: #606b83 !important;}
-body.dark table tbody .actions button svg{
-  color: #fff !important;}
-body.dark table tbody .actions button.secondary{
-  background: #de2fff;}
-body.dark table tbody .actions button.success{
-  background: #27bf68;}
-body.dark table tbody .actions button.error{
-  background: #ff6179;}
-body.dark .loginSection {
-  background: #112142 !important;}
-body.dark form .form-control {
-  background: #071739 !important;
-  border: 1px solid #ffffff1a !important;
-  color: #ffffffb3 !important;}
-body.dark .link {
-  color: #fff9;}
-body.dark {
-  color: #ffffffb3;}
-body.dark .loginSection .loginBox .wrapper .or span.line {
-  background: #ffffff4d !important;}
-body.dark .loginSection .loginBox .wrapper .or span.txt {
-  border: 1px solid #ffffff4d;
-  color: #ffffff80 !important;}
-body.dark .loginSection .loginBox .wrapper .form-control:focus {
-  border: 1px solid #0858f7 !important;}
-body.dark .signUpSection .loginBox {
-  background: #1b2b4d !important;}
-body.dark .MuiSvgIcon-root{
-  color: #fffc !important;}
+  body.dark { background: #071739 !important; transition: background-color 0.4s ease; color: #ffffffb3; }
+  body.dark header,
+  body.dark header button.rounded-circle,
+  body.dark header button.rounded-circle svg,
+  body.dark .main .sidebarWrapper .sidebar,
+  body.dark .main .sidebarWrapper .sidebar ul li button,
+  body.dark .main .sidebarWrapper .sidebar ul li button:hover,
+  body.dark .main .sidebarWrapper .sidebar ul li button.active { transition: none !important; }
+  body.dark header { background: #112143; }
+  body.dark header button.rounded-circle { background: #112755; }
+  body.dark header button.rounded-circle svg { color: #fff; }
+  body.dark .searchBox { background: #12254e; }
+  body.dark .searchBox input,
+  body.dark .searchBox input::-webkit-input-placeholder,
+  body.dark .searchBox svg { color: rgba(255,255,255,0.7); }
+  body.dark .logo span,
+  body.dark .MuiSvgIcon-root { color: #fffc !important; }
+  body.dark .myAcc .userInfo * { color: rgba(255, 255, 255, 0.8) !important; }
+  body.dark .MuiPaper-elevation,
+  body.dark .dropdown_list li.MuiButtonBase-root { background-color: #12254e !important; background: #12254e !important; }
+  body.dark .MuiPaper-elevation li *,
+  body.dark .MuiPaper-elevation li,
+  body.dark .dropdown_list .head h4 { color: rgba(255, 255, 255, 0.8) !important; }
+  body.dark .main .sidebarWrapper .sidebar { background: #112143; }
+  body.dark .main .sidebarWrapper .sidebar ul li button,
+  body.dark .main .sidebarWrapper .sidebar ul li button * { color: rgba(255, 255, 255, 0.8) !important; }
+  body.dark .main .sidebarWrapper .sidebar ul li button:hover,
+  body.dark .main .sidebarWrapper .sidebar ul li button.active { background: rgba(255, 255, 255, 0.1) !important; }
+  body.dark .main .sidebarWrapper .sidebar ul .submenu::before { background: rgba(255, 255, 255, 0.2) !important; }
+  body.dark .main .sidebarWrapper .sidebar ul .submenu li a { color: rgba(255, 255, 255, 0.7) !important; }
+  body.dark .main .sidebarWrapper .sidebar ul .submenu li a:hover { color: #0858f7 !important; }
+  body.dark .main .sidebarWrapper .sidebar ul li button.active .icon svg { color: #0858f7 !important; fill: #0858f7 !important; }
+  body.dark .logoutWrapper .logoutBox { background-image: linear-gradient(#183e8c, #163474); }
+  body.dark .dropdownMenu { background: #1b2b4d !important; border: 1px solid #10214b !important; }
+  body.dark .dropdownMenu li,
+  body.dark .dropdown-item,
+  body.dark .dropdown-icon,
+  body.dark h1,
+  body.dark h2,
+  body.dark h3,
+  body.dark h4,
+  body.dark h5,
+  body.dark h6,
+  body.dark p { color: #fffc !important; }
+  body.dark .card,
+  body.dark .signUpSection .loginBox { background: #1b2b4d !important; }
+  body.dark .signUpSection .card { border: transparent !important; }
+  body.dark .card { border: 1px solid #10214b !important; transition: background-color 0.4s ease; }
+  body.dark .dropdown-select { background: transparent !important; border: 1px solid rgba(228, 218, 218, 0.603) !important; color: #fffc; }
+  body.dark .dropdown-menu { background: #12254e !important; border: none !important; }
+  body.dark table,
+  body.dark table th,
+  body.dark table td { border-color: #ffffff33; }
+  body.dark table td { color: #ffffff85 !important; }
+  body.dark tbody tr:nth-child(odd) { background-color: #16223e; }
+  body.dark .pagination *,
+  body.dark .link { color: #fff9 !important; }
+  body.dark .MuiPaginationItem-root:hover { background: #fff3 !important; }
+  body.dark .table-responsive::-webkit-scrollbar-thumb { background: #606b83 !important; }
+  body.dark table tbody .actions button svg { color: #fff !important; }
+  body.dark table tbody .actions button.secondary { background: #de2fff; }
+  body.dark table tbody .actions button.success { background: #27bf68; }
+  body.dark table tbody .actions button.error { background: #ff6179; }
+  body.dark .loginSection { background: #112142 !important; }
+  body.dark form .form-control { background: #071739 !important; border: 1px solid #ffffff1a !important; color: #ffffffb3 !important; }
+  body.dark .loginSection .loginBox .wrapper .form-control:focus { border: 1px solid #0858f7 !important; }
+  body.dark .loginSection .loginBox .wrapper .or span.line { background: #ffffff4d !important; }
+  body.dark .loginSection .loginBox .wrapper .or span.txt { border: 1px solid #ffffff4d; color: #ffffff80 !important; }  
 
 .searchBox{
   width: 450px;
