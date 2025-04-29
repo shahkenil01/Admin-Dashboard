@@ -186,7 +186,7 @@ const Dashboard = () => {
                     </div>
                   </div>
                 </td>
-                <td>Women</td>
+                <td>women</td>
                 <td>richman</td>
                 <td>
                   <div style={{ width: "70px" }}>

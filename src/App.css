@@ -85,6 +85,8 @@ header button.rounded-circle svg{
 header button.rounded-circle:hover svg{
   color: #0858f7}
 
+body.dark {
+  background: #071739 !important;}
 body.dark header{
   background: #112143;}
 body.dark header button.rounded-circle{
@@ -128,8 +130,41 @@ body.dark .main .sidebarWrapper .sidebar ul .submenu li a:hover{
 body.dark .main .sidebarWrapper .sidebar ul li button.active .icon svg{
   color: #0858f7 !important;
   fill: #0858f7 !important;}
-/*body.dark .logoutWrapper .loginBox{
-  background-image: linear-gradient (rgba(var(#183e8c,#163474),25%)) !important;}*/
+body.dark .logoutWrapper .logoutBox{
+  background-image: linear-gradient(#183e8c, #163474);}
+body.dark .dropdownMenu {
+  background: #1b2b4d !important;
+  border: 1px solid #10214b !important;}
+body.dark .dropdownMenu li {
+  color: #fffc;}
+body.dark .card {
+  background: #1b2b4d;
+  border: 1px solid #10214b;}
+body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark h5, body.dark h6, body.dark p {
+  color: #fffc !important;}
+body.dark .dropdown-select{
+  background: transparent !important;
+  border: 1px solid rgba(228, 218, 218, 0.603) !important;
+  color: #fffc;}
+body.dark .dropdown-menu{
+  background: #12254e !important;
+  border: none !important;}
+body.dark .dropdown-item, body.dark .dropdown-icon {
+  color: #fffc;}
+body.dark table td {
+  color: #ffffff85 !important;}
+body.dark table, 
+body.dark table th, 
+body.dark table td {
+  border-color: #ffffff33;}
+body.dark tbody tr:nth-child(odd) {
+  background-color: #16223e;}
+body.dark .pagination *{
+  color: #cccf !important;}
+body.dark .MuiPaginationItem-root:hover {
+  background: #fff3 !important;}
+body.dark .table-responsive::-webkit-scrollbar-thumb{
+  background: #606b83 !important;}
 
 .searchBox{
   width: 450px;
@@ -605,6 +640,8 @@ table tbody .actions button{
   width: 32px;
   height: 32px;
   margin: 0px 3px;}
+tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;}
 table tbody .actions button svg{
   font-size: 30px;}
 table tbody .actions button.secondary{
