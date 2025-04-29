@@ -20,7 +20,7 @@ body:not(.dark),
 body:not(.dark) table,
 body:not(.dark) .table tbody td,
 body:not(.dark) .dropdown-menu {
-  transition: background-color 0.2s ease, color 0.2s ease;}
+  transition: background-color 0.4s ease, color 0.4s ease;}
 body:not(.dark) header button.rounded-circle,
 body:not(.dark) header button.rounded-circle svg,
 body:not(.dark) .card,
@@ -108,7 +108,7 @@ body.dark .main .sidebarWrapper .sidebar ul li button.active {
   transition: none !important;}
 body.dark {
   background: #071739 !important;
-  transition: background-color 0.2s ease;}
+  transition: background-color 0.4s ease;}
 body.dark header{
   background: #112143;}
 body.dark header button.rounded-circle{
@@ -161,7 +161,7 @@ body.dark .dropdownMenu li {
   color: #fffc;}
 body.dark .card {
   background: #1b2b4d;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.4s ease;
   border: 1px solid #10214b;}
 body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark h5, body.dark h6, body.dark p {
   color: #fffc !important;}
