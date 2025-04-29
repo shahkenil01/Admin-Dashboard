@@ -165,6 +165,14 @@ body.dark .MuiPaginationItem-root:hover {
   background: #fff3 !important;}
 body.dark .table-responsive::-webkit-scrollbar-thumb{
   background: #606b83 !important;}
+body.dark table tbody .actions button svg{
+  color: #fff !important;}
+body.dark table tbody .actions button.secondary{
+  background: #de2fff;}
+body.dark table tbody .actions button.success{
+  background: #27bf68;}
+body.dark table tbody .actions button.error{
+  background: #ff6179;}
 
 .searchBox{
   width: 450px;
