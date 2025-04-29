@@ -26,6 +26,7 @@ import Pagination from '@mui/material/Pagination';
 const Dashboard = () => {
   const [anchorEl, setAnchorEl] = useState(null);
   const [showBy, setshowBy] = useState('');
+  const [categoryBy, setCategoryBy] = useState('');
   const options = ['Last Day', 'Last Week', 'Last Month', 'Last Year'];
 
   const ITEM_HEIGHT = 48;
@@ -140,8 +141,8 @@ const Dashboard = () => {
             <h4>CATEGORY BY</h4>
             <FormControl size="small" className="w-100">
               <CustomDropdown
-                value={showBy}
-                onChange={setshowBy}
+                value={categoryBy}
+                onChange={setCategoryBy}
                 options={[
                   { value: '', label: 'None' },
                   { value: 10, label: 'Ten' },

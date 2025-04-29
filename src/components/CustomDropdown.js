@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { RiArrowDropDownFill } from "react-icons/ri";
+import Grow from '@mui/material/Grow';
 
 const CustomDropdown = ({ value, onChange, options = [], placeholder = "Select" }) => {
   const [open, setOpen] = useState(false);
@@ -22,7 +23,7 @@ const CustomDropdown = ({ value, onChange, options = [], placeholder = "Select" 
         <span>{value ? options.find(o => o.value === value)?.label : <em>{placeholder}</em>}</span>
         <RiArrowDropDownFill className={`dropdown-icon ${open ? 'rotate' : ''}`} />
       </div>
-      {open && (
+      <Grow in={open}>
         <div className="dropdown-menu">
           {options.map(opt => (
             <div
@@ -37,7 +38,7 @@ const CustomDropdown = ({ value, onChange, options = [], placeholder = "Select" 
             </div>
           ))}
         </div>
-      )}
+      </Grow>
     </div>
   );
 };
