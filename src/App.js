@@ -8,6 +8,8 @@ import { createContext, useEffect, useState } from 'react';
 import Login from './pages/login';
 import SignUp from './pages/SignUp';
 import NotFound from './pages/NotFound';
+import ProductDetails from './pages/ProductDetails';
+import Products from './pages/Products';
 
 const MyContext = createContext();
 
@@ -47,7 +49,8 @@ function AppWrapper() {
     { path: "/" },
     { path: "/dashboard" },
     { path: "/login" },
-    { path: "/signUp" }
+    { path: "/signUp" },
+    { path: "/products" }
   ];
 
   const matchedRoutes = matchRoutes(routes, location);
@@ -73,6 +76,8 @@ function AppWrapper() {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signUp" element={<SignUp />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/productDetail" element={<ProductDetails />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>

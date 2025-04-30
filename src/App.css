@@ -142,7 +142,8 @@ body.dark h4,
 body.dark h5,
 body.dark h6,
 body.dark p { color: rgba(255, 255, 255, 0.938) !important; }
-body.dark .notfound-page h2, body.dark .notfound-page p{
+body.dark .notfound-page h2, 
+body.dark .notfound-page p{
   color: #24292f !important;}
 body.dark .card,
 body.dark .signUpSection .loginBox { background: #1b2b4d !important; }
@@ -815,3 +816,13 @@ table td .new, table td .old {
   font-weight: 800;}
 .signUpSection .part1 p {
   font-size: 18px;}
+.dashboardBoxWrapper {
+  gap: 20px;
+  width: 100%;
+  flex-wrap: wrap;}
+.full-width-dashboardBoxWrapper .dashboardBoxWrapper .dashboardBox{
+  width: 100% !important;
+  height: 120px !important;}
+.full-width-dashboardBoxWrapper .dashboardBoxWrapper .dashboardBox .chart{
+  opacity: 0.005;
+  top: 10px;}

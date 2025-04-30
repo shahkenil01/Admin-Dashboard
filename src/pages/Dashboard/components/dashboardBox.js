@@ -8,7 +8,7 @@ import Popper from '@mui/material/Popper';
 import MenuItem from '@mui/material/MenuItem';
 import ClickAwayListener from '@mui/material/ClickAwayListener';
 
-const DashboardBox = ({ title, value, icon, grow, color }) => {
+const DashboardBox = ({ title, value, icon, grow, color, noFooter }) => {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
   const options = ['Last Day', 'Last Week', 'Last Month', 'Last Year'];
@@ -44,33 +44,35 @@ const DashboardBox = ({ title, value, icon, grow, color }) => {
         {icon && <div className="ml-auto icon">{icon}</div>}
       </div>
 
-      <div className="d-flex align-items-center w-100 bottomEle">
-        <h6 className="text-white mb-0 mt-0">Last Month</h6>
-        <div className="ml-auto" style={{ position: "relative" }}>
-          <Button className="toggleIcon" onClick={handleClick}>
-            <HiDotsVertical />
-          </Button>
-
-          <Popper
-            open={open}
-            anchorEl={anchorEl}
-            placement="bottom-end"
-            disablePortal
-            style={{ zIndex: 999 }}
-          >
-            <ClickAwayListener onClickAway={handleClose}>
-              <div className="dropdownMenu">
-                {options.map((option, index) => (
-                  <MenuItem key={index} onClick={handleClose}>
-                    <IoIosTimer style={{ marginRight: '8px' }} />
-                    {option}
-                  </MenuItem>
-                ))}
-              </div>
-            </ClickAwayListener>
-          </Popper>
+      {!noFooter && (
+        <div className="d-flex align-items-center w-100 bottomEle">
+          <h6 className="text-white mb-0 mt-0">Last Month</h6>
+          <div className="ml-auto" style={{ position: "relative" }}>
+            <Button className="toggleIcon" onClick={handleClick}>
+              <HiDotsVertical />
+            </Button>
+      
+            <Popper
+              open={open}
+              anchorEl={anchorEl}
+              placement="bottom-end"
+              disablePortal
+              style={{ zIndex: 999 }}
+            >
+              <ClickAwayListener onClickAway={handleClose}>
+                <div className="dropdownMenu">
+                  {options.map((option, index) => (
+                    <MenuItem key={index} onClick={handleClose}>
+                      <IoIosTimer style={{ marginRight: '8px' }} />
+                      {option}
+                    </MenuItem>
+                  ))}
+                </div>
+              </ClickAwayListener>
+            </Popper>
+          </div>
         </div>
-      </div>
+      )}      
     </div>
   );
 };

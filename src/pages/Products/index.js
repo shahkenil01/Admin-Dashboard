@@ -1,0 +1,257 @@
+import DashboardBox from '../Dashboard/components/dashboardBox'; 
+import { FaUserCircle } from "react-icons/fa";
+import { IoMdCart } from "react-icons/io";
+import { MdShoppingBag } from "react-icons/md";
+import FormControl from '@mui/material/FormControl';
+import CustomDropdown from '../../components/CustomDropdown';
+import Pagination from '@mui/material/Pagination';
+import { FaEye } from "react-icons/fa";
+import { FaPencilAlt } from "react-icons/fa";
+import { MdDelete } from "react-icons/md";
+import Button from '@mui/material/Button';
+import { Breadcrumbs, Typography, Link as MuiLink } from '@mui/material';
+import { Link } from 'react-router-dom';
+
+const Products = () => {
+  const showBy = '';
+  const categoryBy = '';
+
+  return (
+    <div className="right-content w-100">
+
+<div className="card shadow border-0 w-100 flex-row p-4 align-items-center justify-content-between mb-4">
+  <h5 className="mb-0 text-white">Product List</h5>
+  <Breadcrumbs aria-label="breadcrumb">
+    <MuiLink component={Link} underline="hover" color="inherit" to="/dashboard">
+      Dashboard
+    </MuiLink>
+    <Typography color="text.primary">Products</Typography>
+  </Breadcrumbs>
+</div>
+
+      <div className="full-width-dashboardBoxWrapper">
+        <div className="dashboardBoxWrapper d-flex w-100" style={{ gap: '20px' }}>
+          <div style={{ flex: 1 }}>
+            <DashboardBox color={["#1da256", "#48d483"]} icon={<FaUserCircle />} title="Total Users" value="277" noFooter={true}/>
+          </div>
+          <div style={{ flex: 1 }}>
+            <DashboardBox color={["#c012e2", "#eb64fe"]} icon={<IoMdCart />} title="Total Orders" value="145" noFooter={true}/>
+          </div>
+          <div style={{ flex: 1 }}>
+            <DashboardBox color={["#2c78e5", "#60aff5"]} icon={<MdShoppingBag />} title="Total Products" value="86" noFooter={true}/>
+          </div>
+        </div>
+      </div>
+
+      <div className="card shadow border-0 p-3 mt-4">
+        <h3 className="hd">Best Selling Products</h3>
+
+        <div className="row cardFilters mt-3">
+          <div className="col-md-3">
+            <h4>SHOW BY</h4>
+            <FormControl size="small" className="w-100">
+              <CustomDropdown
+                value={showBy}
+                onChange={() => {}}
+                options={[
+                  { value: '', label: 'None' },
+                  { value: 10, label: 'Ten' },
+                  { value: 20, label: 'Twenty' },
+                  { value: 30, label: 'Thirty' }
+                ]}
+                placeholder="None"
+              />
+            </FormControl>
+          </div>
+          <div className="col-md-3">
+            <h4>CATEGORY BY</h4>
+            <FormControl size="small" className="w-100">
+              <CustomDropdown
+                value={categoryBy}
+                onChange={() => {}}
+                options={[
+                  { value: '', label: 'None' },
+                  { value: 10, label: 'Ten' },
+                  { value: 20, label: 'Twenty' },
+                  { value: 30, label: 'Thirty' }
+                ]}
+                placeholder="None"
+              />
+            </FormControl>
+          </div>
+        </div>
+
+        <div className="table-responsive mt-3">
+          <table className="table table-bordered v-align">
+            <thead className="thead-dark">
+              <tr>
+                <th>UID</th>
+                <th>PRODUCT</th>
+                <th>CATEGORY</th>
+                <th>BRAND</th>
+                <th>PRICE</th>
+                <th>STOCK</th>
+                <th>RATING</th>
+                <th>ORDER</th>
+                <th>SALES</th>
+                <th>ACTIONS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#1</td>
+                <td>
+                  <div class="d-flex align-items-center productBox">
+                    <div class="imgWrapper">
+                      <div class="img card shadow m-0">
+                        <img src="https://mironcoder-hotash.netlify.app/images/product/01.webp" className="w-100" />
+                      </div>
+                    </div>
+                    <div class="info pl-3">
+                      <h6>Tops and skirt set for Female...</h6>
+                      <p>Women's exclusive summer Tops and skirt set for Female Tops and skirt set</p>
+                    </div>
+                  </div>
+                </td>
+                <td>women</td>
+                <td>richman</td>
+                <td>
+                  <div style={{ width: "70px" }}>
+                    <del class="old">₹210</del>
+                    <span class="new text-danger">₹200</span>
+                  </div>
+                </td>
+                <td>4.5</td>
+                <td>4.9(16)</td>
+                <td>380</td>
+                <td>₹38k</td>
+                <td>
+                  <div class="actions d-flex align-items-center">
+                    <Button className='secondary' color="secondary"><FaEye /></Button>
+                    <Button className='success' color="success"><FaPencilAlt /></Button>
+                    <Button className='error' color="error"><MdDelete /></Button>
+                    <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>#1</td>
+                <td>
+                  <div class="d-flex align-items-center productBox">
+                    <div class="imgWrapper">
+                      <div class="img card shadow m-0">
+                        <img src="https://mironcoder-hotash.netlify.app/images/product/01.webp" className="w-100" />
+                      </div>
+                    </div>
+                    <div class="info pl-3">
+                      <h6>Tops and skirt set for Female...</h6>
+                      <p>Women's exclusive summer Tops and skirt set for Female Tops and skirt set</p>
+                    </div>
+                  </div>
+                </td>
+                <td>women</td>
+                <td>richman</td>
+                <td>
+                  <div style={{ width: "70px" }}>
+                    <del class="old">₹210</del>
+                    <span class="new text-danger">₹200</span>
+                  </div>
+                </td>
+                <td>4.5</td>
+                <td>4.9(16)</td>
+                <td>380</td>
+                <td>₹38k</td>
+                <td>
+                  <div class="actions d-flex align-items-center">
+                    <Button className='secondary' color="secondary"><FaEye /></Button>
+                    <Button className='success' color="success"><FaPencilAlt /></Button>
+                    <Button className='error' color="error"><MdDelete /></Button>
+                    <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>#1</td>
+                <td>
+                  <div class="d-flex align-items-center productBox">
+                    <div class="imgWrapper">
+                      <div class="img card shadow m-0">
+                        <img src="https://mironcoder-hotash.netlify.app/images/product/01.webp" className="w-100" />
+                      </div>
+                    </div>
+                    <div class="info pl-3">
+                      <h6>Tops and skirt set for Female...</h6>
+                      <p>Women's exclusive summer Tops and skirt set for Female Tops and skirt set</p>
+                    </div>
+                  </div>
+                </td>
+                <td>women</td>
+                <td>richman</td>
+                <td>
+                  <div style={{ width: "70px" }}>
+                    <del class="old">₹210</del>
+                    <span class="new text-danger">₹200</span>
+                  </div>
+                </td>
+                <td>4.5</td>
+                <td>4.9(16)</td>
+                <td>380</td>
+                <td>₹38k</td>
+                <td>
+                  <div class="actions d-flex align-items-center">
+                    <Button className='secondary' color="secondary"><FaEye /></Button>
+                    <Button className='success' color="success"><FaPencilAlt /></Button>
+                    <Button className='error' color="error"><MdDelete /></Button>
+                    <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>#1</td>
+                <td>
+                  <div class="d-flex align-items-center productBox">
+                    <div class="imgWrapper">
+                      <div class="img card shadow m-0">
+                        <img src="https://mironcoder-hotash.netlify.app/images/product/01.webp" className="w-100" />
+                      </div>
+                    </div>
+                    <div class="info pl-3">
+                      <h6>Tops and skirt set for Female...</h6>
+                      <p>Women's exclusive summer Tops and skirt set for Female Tops and skirt set</p>
+                    </div>
+                  </div>
+                </td>
+                <td>women</td>
+                <td>richman</td>
+                <td>
+                  <div style={{ width: "70px" }}>
+                    <del class="old">₹210</del>
+                    <span class="new text-danger">₹200</span>
+                  </div>
+                </td>
+                <td>4.5</td>
+                <td>4.9(16)</td>
+                <td>380</td>
+                <td>₹38k</td>
+                <td>
+                  <div class="actions d-flex align-items-center">
+                    <Button className='secondary' color="secondary"><FaEye /></Button>
+                    <Button className='success' color="success"><FaPencilAlt /></Button>
+                    <Button className='error' color="error"><MdDelete /></Button>
+                    <span class="MuiTouchRipple-root css-w0pj6f"></span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="d-flex tableFooter">
+            <p>showing <b>12</b> of <b>60</b> results</p>
+            <Pagination count={10} color="primary" className='pagination' showFirstButton showLastButton />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Products;
