@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function NotFound() {
   return (
-    <div style={{
+    <div className="notfound-page" style={{
       minHeight: '100vh',
       backgroundColor: '#0d1117',
       display: 'flex',

@@ -141,7 +141,9 @@ body.dark h3,
 body.dark h4,
 body.dark h5,
 body.dark h6,
-body.dark p { color: #fffc !important; }
+body.dark p { color: rgba(255, 255, 255, 0.938) !important; }
+body.dark .notfound-page h2, body.dark .notfound-page p{
+  color: #24292f !important;}
 body.dark .card,
 body.dark .signUpSection .loginBox { background: #1b2b4d !important; }
 body.dark .signUpSection .card { border: transparent !important; }
@@ -167,6 +169,8 @@ body.dark .loginSection .loginBox .wrapper .or span.line { background: #ffffff4d
 body.dark .loginSection .loginBox .wrapper .or span.txt { border: 1px solid #ffffff4d; color: #ffffff80 !important; }
 .link.color, .link:hover {
   color: #0858f7 !important;}
+body.dark .link {
+  color: #fff9;}
 
 .searchBox{
   width: 450px;
