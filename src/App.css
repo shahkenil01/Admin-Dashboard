@@ -98,7 +98,7 @@ header button.rounded-circle svg{
 header button.rounded-circle:hover svg{
   color: #0858f7}
 
-body.dark { background: #071739 !important; transition: background-color 0.4s ease; color: #ffffffb3; }
+body.dark { background: #071739 !important; transition: background-color 0.2s ease; color: #ffffffb3; }
 body.dark header,
 body.dark header button.rounded-circle,
 body.dark header button.rounded-circle svg,
@@ -145,7 +145,7 @@ body.dark p { color: #fffc !important; }
 body.dark .card,
 body.dark .signUpSection .loginBox { background: #1b2b4d !important; }
 body.dark .signUpSection .card { border: transparent !important; }
-body.dark .card { border: 1px solid #10214b !important; transition: background-color 0.4s ease; }
+body.dark .card { border: 1px solid #10214b !important; transition: background-color 0.2s ease; }
 body.dark .dropdown-select { background: transparent !important; border: 1px solid rgba(228, 218, 218, 0.603) !important; color: #fffc; }
 body.dark .dropdown-menu { background: #12254e !important; border: none !important; }
 body.dark table,
