@@ -11,6 +11,7 @@ import { MdDelete } from "react-icons/md";
 import Button from '@mui/material/Button';
 import { Breadcrumbs, Typography, Link as MuiLink } from '@mui/material';
 import { Link } from 'react-router-dom';
+import { IoMdHome } from "react-icons/io";
 
 const Products = () => {
   const showBy = '';
@@ -19,15 +20,17 @@ const Products = () => {
   return (
     <div className="right-content w-100">
 
-<div className="card shadow border-0 w-100 flex-row p-4 align-items-center justify-content-between mb-4">
-  <h5 className="mb-0 text-white">Product List</h5>
-  <Breadcrumbs aria-label="breadcrumb">
-    <MuiLink component={Link} underline="hover" color="inherit" to="/dashboard">
-      Dashboard
-    </MuiLink>
-    <Typography color="text.primary">Products</Typography>
-  </Breadcrumbs>
-</div>
+      <div className="card shadow border-0 w-100 flex-row p-4 align-items-center justify-content-between mb-4 breadcrumbCard">
+        <h5 className="mb-0">Product List</h5>
+        <Breadcrumbs aria-label="breadcrumb">
+          <MuiLink component={Link} underline="hover" color="inherit" to="/dashboard" className="breadcrumb-link">
+            <IoMdHome/>Dashboard
+          </MuiLink>
+          <Typography className="breadcrumb-current" component="span" sx={{ padding: '6px 10px', borderRadius: '16px' }}>
+            Products
+          </Typography>
+        </Breadcrumbs>
+      </div>
 
       <div className="full-width-dashboardBoxWrapper">
         <div className="dashboardBoxWrapper d-flex w-100" style={{ gap: '20px' }}>
