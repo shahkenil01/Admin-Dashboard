@@ -52,7 +52,7 @@ function AppWrapper() {
     { path: "/login" },
     { path: "/signUp" },
     { path: "/products" },
-    { path: "/productDetail" }
+    { path: "/product/details" }
   ];
 
   const matchedRoutes = matchRoutes(routes, location);
@@ -79,7 +79,7 @@ function AppWrapper() {
             <Route path="/login" element={<Login />} />
             <Route path="/signUp" element={<SignUp />} />
             <Route path="/products" element={<Products />} />
-            <Route path="/productDetail" element={<ProductDetails />} />
+            <Route path="/product/details" element={<ProductDetails />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>

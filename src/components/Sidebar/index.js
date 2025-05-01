@@ -1,5 +1,5 @@
 import Button from '@mui/material/Button';
-import { useLocation } from 'react-router-dom'; // NEW
+import { useLocation } from 'react-router-dom';
 import { MdDashboard } from "react-icons/md";
 import { FaAngleRight } from "react-icons/fa";
 import { FaProductHunt } from "react-icons/fa";
@@ -48,7 +48,7 @@ const Sidebar = () => {
           <div className={`submenuWrapper ${isOpen[1] ? 'colapse' : 'colapsed'}`}>
             <ul className='submenu'>
               <li><Link to="/products">Product List</Link></li>
-              <li><Link to="productDetail">Product View</Link></li>
+              <li><Link to="/product/details">Product View</Link></li>
               <li><Link to="#">Product Upload</Link></li>
             </ul>
           </div>
