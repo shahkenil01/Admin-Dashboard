@@ -23,7 +23,7 @@ const Products = () => {
       <div className="card shadow border-0 w-100 flex-row p-4 align-items-center justify-content-between mb-4 breadcrumbCard">
         <h5 className="mb-0">Product List</h5>
         <Breadcrumbs aria-label="breadcrumb">
-          <MuiLink component={Link} underline="hover" color="inherit" to="/dashboard" className="breadcrumb-link">
+          <MuiLink component={Link} underline="hover" color="inherit" to="/" className="breadcrumb-link">
             <IoMdHome/>Dashboard
           </MuiLink>
           <Typography className="breadcrumb-current" component="span" sx={{ padding: '6px 10px', borderRadius: '16px' }}>

@@ -825,8 +825,8 @@ table td .new, table td .old {
   width: 100% !important;
   height: 120px !important;}
 .full-width-dashboardBoxWrapper .dashboardBoxWrapper .dashboardBox .chart{
-  opacity: 0.005;
-  top: 10px;}
+  opacity: 0.09;
+  top: -5px;}
 
 .breadcrumb-link {
   font-size: 15px !important;

@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes, useLocation, matchRoutes } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css"
 import './App.css';
+import ScrollToTop from './components/ScrollToTop';
 import Dashboard from './pages/Dashboard';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
@@ -90,6 +91,7 @@ function AppWrapper() {
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <AppWrapper />
     </BrowserRouter>
   );

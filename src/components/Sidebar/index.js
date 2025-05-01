@@ -1,4 +1,5 @@
 import Button from '@mui/material/Button';
+import { useLocation } from 'react-router-dom'; // NEW
 import { MdDashboard } from "react-icons/md";
 import { FaAngleRight } from "react-icons/fa";
 import { FaProductHunt } from "react-icons/fa";
@@ -21,19 +22,23 @@ const Sidebar = () => {
     setIsOpen(prev => prev.map((state, i) => i === index ? !state : state));
   };
 
+  const location = useLocation();
+
+  const isActive = (path) => location.pathname.startsWith(path);
+
   return (
     <div className="sidebar">
       <ul>
         <li>
           <Link to="/">
-            <Button className={`w-100 ${activeTab === 0 ? 'active' : ''}`} onClick={() => handleTabClick(0)}>
+            <Button className={`w-100 ${isActive('/dashboard') || location.pathname === '/' ? 'active' : ''}`}>
               <span className='icon'><MdDashboard /></span>
               Dashboard
             </Button>
           </Link>
         </li>
         <li>
-          <Button className={`w-100 ${activeTab === 1 ? 'active' : ''}`} onClick={() => handleTabClick(1)}>
+          <Button className={`w-100 ${isActive('/products') ? 'active' : ''}`} onClick={() => handleTabClick(1)}>
             <span className='icon'><FaProductHunt /></span>
             Products
             <span className={`arrow ${isOpen[1] ? 'rotate' : ''}`}><FaAngleRight /></span>
