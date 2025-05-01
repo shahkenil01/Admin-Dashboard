@@ -845,3 +845,25 @@ table td .new, table td .old {
 .breadcrumb-link svg{
   font-size: 17px;
   margin-top: -5px;}
+
+.sliderWrapper img {
+  outline: none;
+  border: none;}
+.sliderWrapper .slick-slide:focus,
+.sliderWrapper .slick-slide div:focus {
+  outline: none;}
+.sliderBig .item, .sliderSml .item {
+  border: 2px dashed #ccc !important;
+  border-radius: 7px;
+  overflow: hidden;}
+.sliderSml .slick-slide{
+  padding-right: 10px;}
+.sliderSml .slick-slide .item{
+  border-radius: 7px !important;
+  overflow: hidden !important;}
+.sliderSml .item {
+  cursor: pointer;}
+.sliderBig .item, .sliderSml .item {
+  border: 2px dashed #ccc !important;}
+.sliderBig *, .sliderSml * {
+  transition: all .2s !important;}

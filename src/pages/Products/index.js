@@ -130,7 +130,9 @@ const Products = () => {
                 <td>₹38k</td>
                 <td>
                   <div class="actions d-flex align-items-center">
-                    <Button className='secondary' color="secondary"><FaEye /></Button>
+                    <Link to="/product/details">
+                      <Button className='secondary' color="secondary"><FaEye /></Button>
+                    </Link>
                     <Button className='success' color="success"><FaPencilAlt /></Button>
                     <Button className='error' color="error"><MdDelete /></Button>
                     <span class="MuiTouchRipple-root css-w0pj6f"></span>
@@ -166,7 +168,9 @@ const Products = () => {
                 <td>₹38k</td>
                 <td>
                   <div class="actions d-flex align-items-center">
-                    <Button className='secondary' color="secondary"><FaEye /></Button>
+                    <Link to="/product/details">
+                      <Button className='secondary' color="secondary"><FaEye /></Button>
+                    </Link>
                     <Button className='success' color="success"><FaPencilAlt /></Button>
                     <Button className='error' color="error"><MdDelete /></Button>
                     <span class="MuiTouchRipple-root css-w0pj6f"></span>
@@ -202,7 +206,9 @@ const Products = () => {
                 <td>₹38k</td>
                 <td>
                   <div class="actions d-flex align-items-center">
-                    <Button className='secondary' color="secondary"><FaEye /></Button>
+                    <Link to="/product/details">
+                      <Button className='secondary' color="secondary"><FaEye /></Button>
+                    </Link>
                     <Button className='success' color="success"><FaPencilAlt /></Button>
                     <Button className='error' color="error"><MdDelete /></Button>
                     <span class="MuiTouchRipple-root css-w0pj6f"></span>
@@ -238,7 +244,9 @@ const Products = () => {
                 <td>₹38k</td>
                 <td>
                   <div class="actions d-flex align-items-center">
-                    <Button className='secondary' color="secondary"><FaEye /></Button>
+                    <Link to="/product/details">
+                      <Button className='secondary' color="secondary"><FaEye /></Button>
+                    </Link>
                     <Button className='success' color="success"><FaPencilAlt /></Button>
                     <Button className='error' color="error"><MdDelete /></Button>
                     <span class="MuiTouchRipple-root css-w0pj6f"></span>
