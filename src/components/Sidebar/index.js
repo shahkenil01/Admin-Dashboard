@@ -19,7 +19,7 @@ const Sidebar = () => {
 
   const handleTabClick = (index) => {
     setActiveTab(index);
-    setIsOpen(prev => prev.map((state, i) => i === index ? !state : state));
+    setIsOpen(prev => prev.map((state, i) => i === index ? !state : false));
   };
 
   const location = useLocation();
@@ -31,7 +31,9 @@ const Sidebar = () => {
       <ul>
         <li>
           <Link to="/">
-          <Button className={`w-100 ${activeTab === 0 && !location.pathname.startsWith('/products') ? 'active' : ''}`} onClick={() => handleTabClick(0)}>
+            <Button className={`w-100 ${activeTab === 0 && 
+              !location.pathname.startsWith('/products') && 
+              !location.pathname.startsWith('/productDetail') ? 'active' : ''}`} onClick={() => handleTabClick(0)}>
               <span className='icon'><MdDashboard /></span>
               Dashboard
             </Button>
