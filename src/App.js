@@ -51,7 +51,8 @@ function AppWrapper() {
     { path: "/dashboard" },
     { path: "/login" },
     { path: "/signUp" },
-    { path: "/products" }
+    { path: "/products" },
+    { path: "/productDetail" }
   ];
 
   const matchedRoutes = matchRoutes(routes, location);

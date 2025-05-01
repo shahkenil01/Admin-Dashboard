@@ -31,14 +31,14 @@ const Sidebar = () => {
       <ul>
         <li>
           <Link to="/">
-            <Button className={`w-100 ${isActive('/dashboard') || location.pathname === '/' ? 'active' : ''}`}>
+          <Button className={`w-100 ${activeTab === 0 && !location.pathname.startsWith('/products') ? 'active' : ''}`} onClick={() => handleTabClick(0)}>
               <span className='icon'><MdDashboard /></span>
               Dashboard
             </Button>
           </Link>
         </li>
         <li>
-          <Button className={`w-100 ${isActive('/products') ? 'active' : ''}`} onClick={() => handleTabClick(1)}>
+        <Button className={`w-100 ${isActive('/products') || isActive('/productDetail') || activeTab === 1 ? 'active' : ''}`} onClick={() => handleTabClick(1)}>
             <span className='icon'><FaProductHunt /></span>
             Products
             <span className={`arrow ${isOpen[1] ? 'rotate' : ''}`}><FaAngleRight /></span>
@@ -46,7 +46,7 @@ const Sidebar = () => {
           <div className={`submenuWrapper ${isOpen[1] ? 'colapse' : 'colapsed'}`}>
             <ul className='submenu'>
               <li><Link to="/products">Product List</Link></li>
-              <li><Link to="#">Product View</Link></li>
+              <li><Link to="productDetail">Product View</Link></li>
               <li><Link to="#">Product Upload</Link></li>
             </ul>
           </div>
