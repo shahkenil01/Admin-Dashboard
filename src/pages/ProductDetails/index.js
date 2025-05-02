@@ -5,6 +5,13 @@ import { IoMdHome } from "react-icons/io";
 import Slider from "react-slick";
 import { MdBrandingWatermark } from "react-icons/md";
 import { BiSolidCategoryAlt } from "react-icons/bi";
+import { FiSettings } from "react-icons/fi";
+import { FaPalette } from "react-icons/fa";
+import { FiFileText } from "react-icons/fi";
+import { FaTag } from "react-icons/fa";
+import { FaShoppingCart } from "react-icons/fa"	;
+import { FaStar } from "react-icons/fa";
+import { FaShieldAlt } from "react-icons/fa";
 
 const ProductDetails = () => {
 
@@ -25,7 +32,7 @@ const ProductDetails = () => {
     ref: bigSliderRef,
     afterChange: (index) => {
       setActiveIndex(index);
-        if (smallSliderRef.current) {
+      if (smallSliderRef.current) {
         smallSliderRef.current.slickGoTo(index);
       }
     }
@@ -61,7 +68,7 @@ const ProductDetails = () => {
         <h5 className="mb-0">Product View</h5>
         <Breadcrumbs aria-label="breadcrumb">
           <MuiLink component={Link} to="/" underline="hover" color="inherit" className="breadcrumb-link">
-            <IoMdHome/>Dashboard
+            <IoMdHome />Dashboard
           </MuiLink>
           <Typography className="breadcrumb-current" component="span" sx={{ padding: '6px 10px', borderRadius: '16px' }}>
             Products
@@ -84,7 +91,7 @@ const ProductDetails = () => {
                   </div>
                 ))}
               </Slider>
-              <Slider {...productSliderSmlOptions} className="sliderSml"  ref={smallSliderRef}>
+              <Slider {...productSliderSmlOptions} className="sliderSml" ref={smallSliderRef}>
                 {imageUrls.map((url, index) => (
                   <div
                     className={`item thumbnail-item ${activeIndex === index ? 'active' : ''}`}
@@ -105,7 +112,7 @@ const ProductDetails = () => {
               <div className="productInfo mt-4">
                 <div className="row">
                   <div className="col-sm-3 d-flex align-items-center">
-                    <span className="icon"><MdBrandingWatermark/></span>
+                    <span className="icon"><MdBrandingWatermark /></span>
                     <span className="name">Brand</span>
                   </div>
                   <div className="col-sm-9">
@@ -114,7 +121,7 @@ const ProductDetails = () => {
                 </div>
                 <div className="row">
                   <div className="col-sm-3 d-flex align-items-center">
-                    <span className="icon"><BiSolidCategoryAlt/></span>
+                    <span className="icon"><BiSolidCategoryAlt /></span>
                     <span className="name">Category</span>
                   </div>
                   <div className="col-sm-9">
@@ -123,11 +130,116 @@ const ProductDetails = () => {
                 </div>
                 <div className="row">
                   <div className="col-sm-3 d-flex align-items-center">
-                    <span className="icon"><BiSolidCategoryAlt/></span>
+                    <span className="icon"><FiSettings /></span>
                     <span className="name">Tags</span>
                   </div>
                   <div className="col-sm-9">
-                    <span>Man's</span>
+                    <span>
+                      <ul className="list list-inline tags sml">
+                        <li className="list-inline-item">
+                          <span>SUITE</span>
+                        </li>
+                        <li className="list-inline-item">
+                          <span>PARTY</span>
+                        </li>
+                        <li className="list-inline-item">
+                          <span>DRESS</span>
+                        </li>
+                        <li className="list-inline-item">
+                          <span>SMART</span>
+                        </li>
+                        <li className="list-inline-item">
+                          <span>MAN</span>
+                        </li>
+                        <li className="list-inline-item">
+                          <span>STYLES</span>
+                        </li>
+                      </ul>
+                    </span>
+                  </div>
+                </div>
+                <div className="row mb-3">
+                  <div className="col-sm-3 d-flex align-items-center">
+                    <span className="icon"><FaPalette /></span>
+                    <span className="name">Color</span>
+                  </div>
+                  <div className="col-sm-9">
+                    <span>
+                      <ul className="list list-inline tags sml">
+                        <li className="list-inline-item">
+                          <span>RED</span>
+                        </li>
+                        <li className="list-inline-item">
+                          <span>BLUE</span>
+                        </li>
+                        <li className="list-inline-item">
+                          <span>WHITE</span>
+                        </li>
+                      </ul>
+                    </span>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-sm-3 d-flex align-items-center">
+                    <span className="icon"><FiFileText /></span>
+                    <span className="name">Size</span>
+                  </div>
+                  <div className="col-sm-9">
+                    <span>
+                      <ul className="list list-inline tags sml">
+                        <li className="list-inline-item">
+                          <span>SM</span>
+                        </li>
+                        <li className="list-inline-item">
+                          <span>MD</span>
+                        </li>
+                        <li className="list-inline-item">
+                          <span>LG</span>
+                        </li>
+                        <li className="list-inline-item">
+                          <span>XL</span>
+                        </li>
+                        <li className="list-inline-item">
+                          <span>XXL</span>
+                        </li>
+                      </ul>
+                    </span>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-sm-3 d-flex align-items-center">
+                    <span className="icon"><FaTag /></span>
+                    <span className="name">Price</span>
+                  </div>
+                  <div className="col-sm-9">
+                    <span>$37.00</span>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-sm-3 d-flex align-items-center">
+                    <span className="icon"><FaShoppingCart /></span>
+                    <span className="name">Stock</span>
+                  </div>
+                  <div className="col-sm-9">
+                    <span>(68) piece</span>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-sm-3 d-flex align-items-center">
+                    <span className="icon"><FaStar /></span>
+                    <span className="name">Review</span>
+                  </div>
+                  <div className="col-sm-9">
+                    <span>(03) Review</span>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-sm-3 d-flex align-items-center">
+                    <span className="icon"><FaShieldAlt /></span>
+                    <span className="name">Published</span>
+                  </div>
+                  <div className="col-sm-9">
+                    <span>02 feb 2020</span>
                   </div>
                 </div>
               </div>
