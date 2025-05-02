@@ -62,6 +62,12 @@ body:not(.dark) .main .sidebarWrapper .sidebar ul li button:hover {
 
 h1, h2, h3, h4, h5, h6, p {
   color: #403e57;}
+p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 25px;}
+body.light p {
+  font-weight: 400 !important;}
 
 h4{
   line-height: 32px;}
@@ -910,11 +916,15 @@ body.light .productDetailsSEction .productInfo .icon svg {
 .productDetailsSEction .productInfo .row .col-sm-9 span .row, .tags {
   margin-bottom: 0 !important;}
 
-.tags li span{
+body.dark .tags li span{
+  background: #121d37;
+  padding: 3px 10px !important;}
+.tags li span {
+  background: #d8d8d8 !important;
+  color: #000 !important;
+  padding: 4px 10px !important;  
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  background: #121d37;
   border-radius: 5px;
-  font-size: 12px !important;
-  padding: 3px 10px !important;}
+  font-size: 12px !important;}
