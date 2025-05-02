@@ -63,6 +63,9 @@ body:not(.dark) .main .sidebarWrapper .sidebar ul li button:hover {
 h1, h2, h3, h4, h5, h6, p {
   color: #403e57;}
 
+h4{
+  line-height: 32px;}
+
 header{
   width: 100%;
   height: 70px;
@@ -141,7 +144,7 @@ body.dark h3,
 body.dark h4,
 body.dark h5,
 body.dark h6,
-body.dark p { color: rgba(255, 255, 255, 0.938) !important; }
+body.dark p { color: rgba(255, 255, 255, 0.9) !important; }
 body.dark .notfound-page h2, 
 body.dark .notfound-page p{ color: #24292f !important;}
 body.dark .card,
@@ -170,6 +173,7 @@ body.dark .link { color: #fff9;}
 body.dark .loginSection .loginBox .wrapper .or span.txt { border: 1px solid #ffffff4d; color: #ffffff80 !important; }
 body.dark .breadcrumb-link { background-color: #112143; color: #bfced3 !important;}
 body.dark .breadcrumb-current { background-color: #112143; color: #c0d0d4 !important;}
+body.dark .productDetailsSEction .productInfo .name { color: #fffc !important;}
 .link.color, .link:hover {
   color: #0858f7 !important;}
 
@@ -863,7 +867,40 @@ table td .new, table td .old {
   overflow: hidden !important;}
 .sliderSml .item {
   cursor: pointer;}
-.sliderBig .item, .sliderSml .item {
-  border: 2px dashed #ccc !important;}
 .sliderBig *, .sliderSml * {
-  transition: all .2s !important;}
+  transition: all 0.2s !important;}
+
+.productDetailsSEction .productInfo .icon {
+  flex: 0 0 28%;
+  width: 28%;}
+.productDetailsSEction .productInfo .name {
+  color: #5e5d72 !important;
+  flex: 0 0 72%;
+  font-size: 15px;
+  font-weight: 600;
+  width: 72%;}
+.productDetailsSEction .productInfo .icon svg {
+  font-size: 22px;}
+body.light .productDetailsSEction .productInfo .icon svg {
+  color: #5e5d72 !important;}
+.productDetailsSEction .productInfo .row {
+  margin-bottom: 10px !important;}
+.productDetailsSEction .productInfo .row .col-sm-9 span {
+  font-size: 15px;
+  opacity: .8;
+  padding-left: 20px;}
+
+.thumbnail-item {
+  padding: 4px;
+  border: 2px dashed #999;
+  border-radius: 6px;
+  transition: none !important;}
+.thumbnail-item.active {
+  border: 2px dashed #007bff !important;
+  box-shadow: none;}
+
+body.dark .thumbnail-item {
+  border: 2px dashed #555;}
+body.dark .thumbnail-item.active {
+  border: 2px dashed #00bfff !important;
+  box-shadow: none;}
