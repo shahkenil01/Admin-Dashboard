@@ -8,12 +8,14 @@ import { BiSolidCategoryAlt } from "react-icons/bi";
 
 const ProductDetails = () => {
 
-  const [activeIndex, setActiveIndex] = React.useState(0);
   const bigSliderRef = useRef(null);
+  const smallSliderRef = useRef(null);
+
+  const [activeIndex, setActiveIndex] = React.useState(0);
 
   const productSliderOptions = {
     dots: false,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -21,12 +23,17 @@ const ProductDetails = () => {
     autoplay: true,
     autoplaySpeed: 4000,
     ref: bigSliderRef,
-    afterChange: (index) => setActiveIndex(index),
+    afterChange: (index) => {
+      setActiveIndex(index);
+        if (smallSliderRef.current) {
+        smallSliderRef.current.slickGoTo(index);
+      }
+    }
   };
 
   const productSliderSmlOptions = {
     dots: false,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -77,7 +84,7 @@ const ProductDetails = () => {
                   </div>
                 ))}
               </Slider>
-              <Slider {...productSliderSmlOptions} className="sliderSml">
+              <Slider {...productSliderSmlOptions} className="sliderSml"  ref={smallSliderRef}>
                 {imageUrls.map((url, index) => (
                   <div
                     className={`item thumbnail-item ${activeIndex === index ? 'active' : ''}`}
