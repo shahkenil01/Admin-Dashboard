@@ -157,7 +157,8 @@ body.dark .card,
 body.dark .signUpSection .loginBox { background: #1b2b4d !important; }
 body.dark .signUpSection .card { border: transparent !important; }
 body.dark .card { border: 1px solid #10214b !important; transition: background-color 0.2s ease; }
-body.dark .dropdown-select { background: transparent !important; border: 2px solid rgba(228, 218, 218, 0.603) !important; color: #fffc; }
+body.dark .dropdown-select { background: transparent !important; border: 2px solid rgba(228, 218, 218, 0.603); color: #fffc; }
+body.dark .dropdown-select:hover { border-color: #de2fff;}
 body.dark .dropdown-menu { background: #12254e !important; border: none !important; }
 body.dark table,
 body.dark table th,
