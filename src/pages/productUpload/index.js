@@ -1,8 +1,17 @@
 import { Breadcrumbs, Typography, Link as MuiLink, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { IoMdHome } from "react-icons/io";
+import FormControl from '@mui/material/FormControl';
+import CustomDropdown from '../../components/CustomDropdown';
+import { useState } from "react";
 
 const ProductUpload =()=>{
+
+  const [category, setCategory] = useState('');
+  const [subcategory, setSubcategory] = useState('');
+  const [isFeatured, setIsFeatured] = useState('');
+  const [ram, setRam] = useState('');  
+
   return(
     <div className="right-content w-100">
 
@@ -21,6 +30,114 @@ const ProductUpload =()=>{
         </Breadcrumbs>
       </div>
       
+      <form className='form'>
+        <div className="row">
+          <div className="col-md-12">
+            <div className="card p-4 mt-0">
+              <h5 className="mb-4">Basic Information</h5>
+              <div className="form-group">
+                <h6>PRODUCT NAME</h6>
+                <input type="text" name="name" />
+              </div>
+              <div class="form-group">
+                <h6>DESCRIPTION</h6>
+                <textarea rows="5" cols="10"></textarea>
+              </div>
+              <div className="row">
+                <div className="col">
+                  <div className='form-group'>
+                    <h6>CATEGORY</h6>
+                    <FormControl size="small" className="w-100">
+                      <CustomDropdown value={category} onChange={setCategory}
+                        options={[
+                          { value: '', label: 'None' },
+                          { value: '10', label: 'Men' },
+                          { value: '20', label: 'Women' },
+                          { value: '30', label: 'Kids' }
+                        ]} placeholder="None" />
+                    </FormControl>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className='form-group'>
+                    <h6>SUB CATEGORY</h6>
+                    <FormControl size="small" className="w-100">
+                      <CustomDropdown value={subcategory} onChange={setSubcategory}
+                        options={[
+                          { value: '', label: 'None' },
+                          { value: '10', label: 'Jeans' },
+                          { value: '20', label: 'Shirts' }
+                        ]} placeholder="None" />
+                    </FormControl>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className='form-group'>
+                    <h6>PRICE</h6>
+                    <input type="text" name="price"/>
+                  </div>
+                </div>
+              </div>
+              <div className="row">
+                <div class="col">
+                  <div class="form-group">
+                    <h6>OLD PRICE</h6>
+                    <input type="text" name="oldPrice"/>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className='form-group'>
+                    <h6>IS FEATURED</h6>
+                    <FormControl size="small" className="w-100">
+                      <CustomDropdown value={isFeatured} onChange={setIsFeatured}
+                        options={[
+                          { value: '', label: 'None' },
+                          { value: '10', label: 'True' },
+                          { value: '20', label: 'False' }
+                        ]} placeholder="None" menuPortalTarget={document.body}/>
+                    </FormControl>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className='form-group'>
+                    <h6>PRODUCT STOCK</h6>
+                    <input type="text" name="price"/>
+                  </div>
+                </div>
+              </div>
+              <div className="row">
+                <div class="col">
+                  <div class="form-group">
+                    <h6>BRAND</h6>
+                    <input type="text" name="brand"/>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className='form-group'>
+                    <h6>DISCOUNT</h6>
+                    <input type="text" name="discount"/>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className='form-group'>
+                    <h6>PRODUCT RAMS</h6>
+                    <FormControl size="small" className="w-100">
+                      <CustomDropdown value={ram} onChange={setRam}
+                        options={[
+                          { value: '', label: 'None' },
+                          { value: '10', label: '4GB' },
+                          { value: '20', label: '8GB' },
+                          { value: '30', label: '10GB' },
+                          { value: '40', label: '12GB' },
+                        ]} placeholder="None" menuPortalTarget={document.body}/>
+                    </FormControl>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
     </div>
   )
 }

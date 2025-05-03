@@ -188,6 +188,8 @@ body.dark .ratingSection .ratingrow .progress { background-color: #000 !importan
 body.dark .reviewSection .reviewsRow { background: #071739 !important; }
 body.dark .reviewForm textarea { background: #132345 !important; border: 1px solid #0d1a36 !important; color: #ffffffb3;}
 body.dark .reviewForm textarea{ color: rgba(255, 255, 255, 0.5) !important; }
+body.dark .form .form-group input, 
+body.dark .form .form-group textarea { background: #2b3c5f !important; border: 1px solid #253557 !important; color: #fffc !important;}
 
 .link.color, .link:hover {
   color: #0858f7 !important;}
@@ -1019,3 +1021,24 @@ textarea {
   outline: #ffdead !important;
   padding: 15px;
   width: 100%;}
+
+.form .form-group{
+  margin-bottom: 25px;}
+.form .form-group h6 {
+  font-size: 13px;
+  margin-bottom: 10px;}
+.form .form-group input, .form .form-group textarea {
+  background: #fafafa;
+  border: 1px solid #0000001a !important;
+  border-radius: 5px;
+  font-size: 14px;
+  height: 50px;
+  outline: none !important;
+  padding-left: 15px;
+  width: 100%;}
+.form .form-group textarea {
+  height: 120px;
+  padding-top: 15px;}
+
+.card {
+  overflow: visible !important;}
