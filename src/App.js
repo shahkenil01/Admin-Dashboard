@@ -11,6 +11,7 @@ import SignUp from './pages/SignUp';
 import NotFound from './pages/NotFound';
 import ProductDetails from './pages/ProductDetails';
 import Products from './pages/Products';
+import ProductUpload from './pages/productUpload';
 
 const MyContext = createContext();
 
@@ -52,7 +53,8 @@ function AppWrapper() {
     { path: "/login" },
     { path: "/signUp" },
     { path: "/products" },
-    { path: "/product/details" }
+    { path: "/product/details" },
+    { path: "/product/upload" }
   ];
 
   const matchedRoutes = matchRoutes(routes, location);
@@ -80,6 +82,7 @@ function AppWrapper() {
             <Route path="/signUp" element={<SignUp />} />
             <Route path="/products" element={<Products />} />
             <Route path="/product/details" element={<ProductDetails />} />
+            <Route path="/product/upload" element={<ProductUpload />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
