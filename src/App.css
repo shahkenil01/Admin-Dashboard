@@ -179,11 +179,13 @@ body.dark .loginSection .loginBox .wrapper .form-control:focus { border: 1px sol
 body.dark .loginSection .loginBox .wrapper .or span.line { background: #ffffff4d !important; }
 body.dark .link { color: #fff9;}
 body.dark .loginSection .loginBox .wrapper .or span.txt { border: 1px solid #ffffff4d; color: #ffffff80 !important; }
-body.dark .breadcrumb-link { background-color: #112143; color: #bfced3 !important;}
+body.dark .breadcrumb-link { background-color: #112143; color: #bfced3;}
+body.dark .breadcrumb-link:hover {color: #0056b3;}
 body.dark .breadcrumb-current { background-color: #112143; color: #c0d0d4 !important;}
 body.dark .productDetailsSEction .productInfo .name { color: #fffc !important;}
 body.dark .tags li span{ background: #121d37; padding: 3px 10px !important;}
 body.dark .ratingSection .ratingrow .progress { background-color: #000 !important;}
+
 .link.color, .link:hover {
   color: #0858f7 !important;}
 

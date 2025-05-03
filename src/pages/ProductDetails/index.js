@@ -70,9 +70,9 @@ const ProductDetails = () => {
           <MuiLink component={Link} to="/" underline="hover" color="inherit" className="breadcrumb-link">
             <IoMdHome />Dashboard
           </MuiLink>
-          <Typography className="breadcrumb-current" component="span" sx={{ padding: '6px 10px', borderRadius: '16px' }}>
+          <MuiLink component={Link} to="/products" underline="hover" color="inherit" className="breadcrumb-link">
             Products
-          </Typography>
+          </MuiLink>
           <Typography className="breadcrumb-current" component="span" sx={{ padding: '6px 10px', borderRadius: '16px' }}>
             Product View
           </Typography>
@@ -303,8 +303,8 @@ const ProductDetails = () => {
           </div>
           <br/>
 
-          <h6 class="mt-4 mb-4">Customer_reviews</h6>
-          
+          <h6 class="mt-4 mb-4">Customer-reviews</h6>
+
 
         </div>
       </div>
