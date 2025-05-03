@@ -185,6 +185,7 @@ body.dark .breadcrumb-current { background-color: #112143; color: #c0d0d4 !impor
 body.dark .productDetailsSEction .productInfo .name { color: #fffc !important;}
 body.dark .tags li span{ background: #121d37; padding: 3px 10px !important;}
 body.dark .ratingSection .ratingrow .progress { background-color: #000 !important;}
+body.dark .reviewForm textarea { background: #132345 !important; border: 1px solid #0d1a36 !important; color: #ffffffb3;}
 
 .link.color, .link:hover {
   color: #0858f7 !important;}
@@ -978,10 +979,10 @@ textarea {
   overflow: auto;
   resize: vertical;}
 .reviewForm textarea {
-  background: #132345 !important;
-  border: 1px solid #0d1a36 !important;
+  background: #f4f4f4 !important;
+  border: 1px solid #dbdbdb !important;
+  color: #000c !important;
   border-radius: 10px;
-  color: #ffffffb3;
   height: 200px;
   outline: #ffdead !important;
   padding: 15px;
