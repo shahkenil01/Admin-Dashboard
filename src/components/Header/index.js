@@ -13,6 +13,7 @@ import { Logout, PersonAdd } from "@mui/icons-material";
 import { IoShieldHalfSharp } from "react-icons/io5";
 import { useContext } from "react";
 import { MyContext } from '../../App';
+import UserAvatarImgComponent from "../userAvatarImg";
 
 const Header = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -228,11 +229,7 @@ const Header = () => {
                 :
               <div className="myAccWrapper">
                 <Button className="myAcc d-flex align-items-center" onClick={handleOpenMyAccDrop}>
-                  <div className="userImg">
-                    <span className="rounded-circle">
-                      <img src="https://mironcoder-hotash.netlify.app/images/avatar/01.webp" alt="profile"/>
-                    </span>
-                  </div>
+                  <UserAvatarImgComponent img={'https://mironcoder-hotash.netlify.app/images/avatar/01.webp'}/>
 
                   <div className="userInfo">
                     <h4>Kenil Shah</h4>

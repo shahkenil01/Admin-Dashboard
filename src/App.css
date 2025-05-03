@@ -185,7 +185,9 @@ body.dark .breadcrumb-current { background-color: #112143; color: #c0d0d4 !impor
 body.dark .productDetailsSEction .productInfo .name { color: #fffc !important;}
 body.dark .tags li span{ background: #121d37; padding: 3px 10px !important;}
 body.dark .ratingSection .ratingrow .progress { background-color: #000 !important;}
+body.dark .reviewSection .reviewsRow { background: #071739 !important; }
 body.dark .reviewForm textarea { background: #132345 !important; border: 1px solid #0d1a36 !important; color: #ffffffb3;}
+body.dark .reviewForm textarea{ color: rgba(255, 255, 255, 0.5) !important; }
 
 .link.color, .link:hover {
   color: #0858f7 !important;}
@@ -234,6 +236,9 @@ body.dark .reviewForm textarea { background: #132345 !important; border: 1px sol
   object-fit: cover;
   width: 100%;
   height: 100%;}
+.userImg.lg{
+  width: 60px;
+  height: 60px;}
 
 .myAcc .userInfo{
   padding-left: 10px;}
@@ -973,6 +978,33 @@ body.light .productDetailsSEction .productInfo .icon svg {
   padding-left: 20px;
   width: 25%;}
 
+.reviewSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;}
+.reviewSection .reviewsRow {
+  background: #ededed;
+  border-radius: 10px;
+  height: auto;
+  margin: 15px 0;
+  padding: 35px;
+  width: 100%;}
+.userInfo h6 {
+  margin-bottom: 0;}
+.MuiRating-root * {
+  color: #faaf00 !important;}
+.reviewSection .reviewsRow .btn-big {
+  font-size: 15px !important;
+  padding: 7px 20px !important;
+  margin-top: -30px;}
+.reviewSection .reviewsRow .btn-big svg {
+  font-size: 15px !important;}
+.reviewSection .reviewsRow p {
+  padding-left: 20px;}
+.reviewSection .reviewsRow.reply {
+  margin-left: auto;
+  width: 90%;}
+
 .reviewForm {
   width: 100%;}
 textarea {
@@ -981,7 +1013,7 @@ textarea {
 .reviewForm textarea {
   background: #f4f4f4 !important;
   border: 1px solid #dbdbdb !important;
-  color: #000c !important;
+  color: #000c;
   border-radius: 10px;
   height: 200px;
   outline: #ffdead !important;

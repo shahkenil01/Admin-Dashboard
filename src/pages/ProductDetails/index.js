@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { Breadcrumbs, Typography, Link as MuiLink, Button } from '@mui/material';
+import { Breadcrumbs, Typography, Link as MuiLink, Button, Rating } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { IoMdHome } from "react-icons/io";
 import Slider from "react-slick";
@@ -12,6 +12,8 @@ import { FaTag } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa"	;
 import { FaStar } from "react-icons/fa";
 import { FaShieldAlt } from "react-icons/fa";
+import { FaReply } from "react-icons/fa";
+import UserAvatarImgComponent from "../../components/userAvatarImg";
 
 const ProductDetails = () => {
 
@@ -304,7 +306,94 @@ const ProductDetails = () => {
           <br/>
 
           <h6 class="mt-4 mb-4">Customer-reviews</h6>
-
+          <div className="reviewSection">
+            <div className="reviewsRow">
+              <div className="row d-flex">
+                <div className="col-sm-7 d-flex d-flex flex-column">
+                    <div className="userInfo d-flex align-items-center mb-3">
+                        <UserAvatarImgComponent img="https://mironcoder-hotash.netlify.app/images/avatar/01.webp" lg={true}/>
+                      <div className="info pl-3">
+                        <h6>Miron Mahmud</h6>
+                        <span>25 minutes ago</span>
+                      </div>
+                    </div>
+                    <Rating name="read-only" value={4.5} readOnly precision={0.5}/>
+                </div>
+                <div className="col-md-5 d-flex align-items-center">
+                  <div className="ml-auto">
+                    <Button className="btn-blue btn-big btn-lg ml-auto"><FaReply/>&nbsp; Reply</Button>
+                  </div>
+                </div>
+                <p className="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quo nostrum dolore fugiat ducimus labore debitis unde autem recusandae? Eius harum tempora quis minima, adipisci natus quod magni omnis quas.</p>
+              </div>
+            </div>
+            <div className="reviewsRow reply">
+              <div className="row d-flex">
+                <div className="col-sm-7 d-flex">
+                  <div className="d-flex flex-column">
+                    <div className="userInfo d-flex align-items-center mb-3">
+                        <UserAvatarImgComponent img="https://mironcoder-hotash.netlify.app/images/avatar/01.webp" lg={true}/>
+                      <div className="info pl-3">
+                        <h6>Miron Mahmud</h6>
+                        <span>25 minutes ago</span>
+                      </div>
+                    </div>
+                    <Rating name="read-only" value={4.5} readOnly precision={0.5}/>
+                  </div>
+                </div>
+                <div className="col-md-5 d-flex align-items-center">
+                  <div className="ml-auto">
+                    <Button className="btn-blue btn-big btn-lg ml-auto"><FaReply/>&nbsp; Reply</Button>
+                  </div>
+                </div>
+                <p className="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quo nostrum dolore fugiat ducimus labore debitis unde autem recusandae? Eius harum tempora quis minima, adipisci natus quod magni omnis quas.</p>
+              </div>
+            </div>
+            <div className="reviewsRow">
+              <div className="row d-flex">
+                <div className="col-sm-7 d-flex">
+                  <div className="d-flex flex-column">
+                    <div className="userInfo d-flex align-items-center mb-3">
+                        <UserAvatarImgComponent img="https://mironcoder-hotash.netlify.app/images/avatar/01.webp" lg={true}/>
+                      <div className="info pl-3">
+                        <h6>Miron Mahmud</h6>
+                        <span>25 minutes ago</span>
+                      </div>
+                    </div>
+                    <Rating name="read-only" value={4.5} readOnly precision={0.5}/>
+                  </div>
+                </div>
+                <div className="col-md-5 d-flex align-items-center">
+                  <div className="ml-auto">
+                    <Button className="btn-blue btn-big btn-lg ml-auto"><FaReply/>&nbsp; Reply</Button>
+                  </div>
+                </div>
+                <p className="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quo nostrum dolore fugiat ducimus labore debitis unde autem recusandae? Eius harum tempora quis minima, adipisci natus quod magni omnis quas.</p>
+              </div>
+            </div>
+            <div className="reviewsRow reply">
+              <div className="row d-flex">
+                <div className="col-sm-7 d-flex">
+                  <div className="d-flex flex-column">
+                    <div className="userInfo d-flex align-items-center mb-3">
+                        <UserAvatarImgComponent img="https://mironcoder-hotash.netlify.app/images/avatar/01.webp" lg={true}/>
+                      <div className="info pl-3">
+                        <h6>Miron Mahmud</h6>
+                        <span>25 minutes ago</span>
+                      </div>
+                    </div>
+                    <Rating name="read-only" value={4.5} readOnly precision={0.5}/>
+                  </div>
+                </div>
+                <div className="col-md-5 d-flex align-items-center">
+                  <div className="ml-auto">
+                    <Button className="btn-blue btn-big btn-lg ml-auto"><FaReply/>&nbsp; Reply</Button>
+                  </div>
+                </div>
+                <p className="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quo nostrum dolore fugiat ducimus labore debitis unde autem recusandae? Eius harum tempora quis minima, adipisci natus quod magni omnis quas.</p>
+              </div>
+            </div>
+          </div>
 
           <h6 class="mt-4 mb-4">Review Reply Form</h6>
           <form className="reviewForm">
