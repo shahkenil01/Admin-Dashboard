@@ -971,3 +971,18 @@ body.light .productDetailsSEction .productInfo .icon svg {
   flex: 0 0 25%;
   padding-left: 20px;
   width: 25%;}
+
+.reviewForm {
+  width: 100%;}
+textarea {
+  overflow: auto;
+  resize: vertical;}
+.reviewForm textarea {
+  background: #132345 !important;
+  border: 1px solid #0d1a36 !important;
+  border-radius: 10px;
+  color: #ffffffb3;
+  height: 200px;
+  outline: #ffdead !important;
+  padding: 15px;
+  width: 100%;}

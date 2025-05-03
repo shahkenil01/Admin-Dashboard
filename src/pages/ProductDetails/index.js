@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { Breadcrumbs, Typography, Link as MuiLink } from '@mui/material';
+import { Breadcrumbs, Typography, Link as MuiLink, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { IoMdHome } from "react-icons/io";
 import Slider from "react-slick";
@@ -305,6 +305,12 @@ const ProductDetails = () => {
 
           <h6 class="mt-4 mb-4">Customer-reviews</h6>
 
+
+          <h6 class="mt-4 mb-4">Review Reply Form</h6>
+          <form className="reviewForm">
+            <textarea placeholder="write here "></textarea>
+            <Button className="btn-blue btn-big btn-lg w-100 mt-4">Drop Your Replies</Button>
+          </form>
 
         </div>
       </div>
