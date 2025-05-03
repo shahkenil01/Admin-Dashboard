@@ -1,16 +1,19 @@
-import { Breadcrumbs, Typography, Link as MuiLink, Button } from '@mui/material';
+import React, { useState } from 'react';
+import { Breadcrumbs, Typography, Link as MuiLink, Button, Rating } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { IoMdHome } from "react-icons/io";
 import FormControl from '@mui/material/FormControl';
 import CustomDropdown from '../../components/CustomDropdown';
-import { useState } from "react";
+import { FaCloudUploadAlt } from "react-icons/fa";
 
 const ProductUpload =()=>{
 
   const [category, setCategory] = useState('');
   const [subcategory, setSubcategory] = useState('');
   const [isFeatured, setIsFeatured] = useState('');
-  const [ram, setRam] = useState('');  
+  const [ram, setRam] = useState(''); 
+  
+  const [value, setValue] = useState(0);
 
   return(
     <div className="right-content w-100">
@@ -31,6 +34,7 @@ const ProductUpload =()=>{
       </div>
       
       <form className='form'>
+
         <div className="row">
           <div className="col-md-12">
             <div className="card p-4 mt-0">
@@ -134,9 +138,32 @@ const ProductUpload =()=>{
                   </div>
                 </div>
               </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <h6>RATINGS</h6>
+                    <Rating
+                      name="simple-controlled"
+                      value={value}
+                      onChange={(event, newValue) => {
+                        setValue(newValue);
+                      }}
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
+        <div className='card p-4 mt-0'>
+          <div className='imagesUploadSec'>
+            <h5 class="mb-4">Media And Published</h5>
+            <br/>
+            <Button className='btn-blue btn-lg btn-big w-100'><FaCloudUploadAlt/> &nbsp; PUBLISH AND VIEW </Button>
+          </div>
+        </div>
+
       </form>
     </div>
   )
