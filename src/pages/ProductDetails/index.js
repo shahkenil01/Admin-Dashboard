@@ -248,9 +248,11 @@ const ProductDetails = () => {
         </div>
 
         <div className="p-4">
+
           <h6 className="mt-4 mb-3">Product Description</h6>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae reprehenderit repellendus expedita esse cupiditate quos doloremque rerum, corrupti ab illum est nihil, voluptate ex dignissimos! Sit voluptatem delectus nam, molestiae, repellendus ab sint quo aliquam debitis amet natus doloremque laudantium? Repudiandae, consequuntur, officiis quidem quo deleniti, autem non laudantium sequi error molestiae ducimus accusamus facere velit consectetur vero dolore natus nihil temporibus aspernatur quia consequatur? Consequuntur voluptate deserunt repellat tenetur debitis molestiae doloribus dicta. In rem illum dolorem atque ratione voluptates asperiores maxime doloremque laudantium magni neque ad quae quos quidem, quaerat rerum ducimus blanditiis reiciendis</p>
           <br/>
+
           <h6 class="mt-4 mb-4">Rating Analytics</h6>
           <div class="ratingSection">
             <div class="ratingrow d-flex align-items-center">
@@ -299,6 +301,11 @@ const ProductDetails = () => {
               <span class="col3">(2)</span>
             </div>
           </div>
+          <br/>
+
+          <h6 class="mt-4 mb-4">Customer_reviews</h6>
+          
+
         </div>
       </div>
     </div>
