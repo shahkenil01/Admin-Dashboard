@@ -6,6 +6,10 @@ import FormControl from '@mui/material/FormControl';
 import CustomDropdown from '../../components/CustomDropdown';
 import { FaCloudUploadAlt } from "react-icons/fa";
 
+import { IoCloseSharp } from 'react-icons/io5';
+import { FaRegImage } from 'react-icons/fa';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 const ProductUpload =()=>{
 
   const [category, setCategory] = useState('');
@@ -159,8 +163,32 @@ const ProductUpload =()=>{
         <div className='card p-4 mt-0'>
           <div className='imagesUploadSec'>
             <h5 class="mb-4">Media And Published</h5>
+            <div className="imgUploadBox d-flex align-items-center">
+              <div className="uploadBox">
+                <span className="remove">
+                  <IoCloseSharp/>
+                </span>
+                <div className="box">
+                  <span
+                    className="lazy-load-image-background blur lazy-load-image-loaded"
+                    style={{ color: 'transparent', display: 'inline-block' }}>
+                    <img
+                      className="w-100"
+                      src="https://mironcoder-hotash.netlify.app/images/product/single/01.webp"
+                      alt="image"/>
+                  </span>
+                </div>
+              </div>
+              <div className="uploadBox">
+                <input type="file" multiple name="images" />
+                <div className="info">
+                  <FaRegImage/>
+                  <h5>image upload</h5>
+                </div>
+              </div>
+            </div>
             <br/>
-            <Button className='btn-blue btn-lg btn-big w-100'><FaCloudUploadAlt/> &nbsp; PUBLISH AND VIEW </Button>
+              <Button className='btn-blue btn-lg btn-big w-100'><FaCloudUploadAlt/> &nbsp; PUBLISH AND VIEW </Button>
           </div>
         </div>
 
