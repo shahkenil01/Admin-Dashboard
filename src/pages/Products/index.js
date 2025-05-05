@@ -107,7 +107,7 @@ const Products = () => {
                   <div class="d-flex align-items-center productBox">
                     <div class="imgWrapper">
                       <div class="img card shadow m-0">
-                        <img src="https://mironcoder-hotash.netlify.app/images/product/01.webp" className="w-100" />
+                        <img src="https://mironcoder-hotash.netlify.app/images/product/01.webp" alt="Product" className="w-100" />
                       </div>
                     </div>
                     <div class="info pl-3">
@@ -145,7 +145,7 @@ const Products = () => {
                   <div class="d-flex align-items-center productBox">
                     <div class="imgWrapper">
                       <div class="img card shadow m-0">
-                        <img src="https://mironcoder-hotash.netlify.app/images/product/01.webp" className="w-100" />
+                        <img src="https://mironcoder-hotash.netlify.app/images/product/01.webp" alt="Product" className="w-100" />
                       </div>
                     </div>
                     <div class="info pl-3">
@@ -183,7 +183,7 @@ const Products = () => {
                   <div class="d-flex align-items-center productBox">
                     <div class="imgWrapper">
                       <div class="img card shadow m-0">
-                        <img src="https://mironcoder-hotash.netlify.app/images/product/01.webp" className="w-100" />
+                        <img src="https://mironcoder-hotash.netlify.app/images/product/01.webp" alt="Product" className="w-100" />
                       </div>
                     </div>
                     <div class="info pl-3">
@@ -221,7 +221,7 @@ const Products = () => {
                   <div class="d-flex align-items-center productBox">
                     <div class="imgWrapper">
                       <div class="img card shadow m-0">
-                        <img src="https://mironcoder-hotash.netlify.app/images/product/01.webp" className="w-100" />
+                        <img src="https://mironcoder-hotash.netlify.app/images/product/01.webp" alt="Product" className="w-100" />
                       </div>
                     </div>
                     <div class="info pl-3">

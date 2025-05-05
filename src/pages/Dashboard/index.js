@@ -9,9 +9,6 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Button from '@mui/material/Button';
 import { useState, useMemo } from "react";
-// import InputLabel from '@mui/material/InputLabel';
-// import FormHelperText from '@mui/material/FormHelperText';
-// import Select, { SelectChangeEvent } from '@mui/material/Select';
 
 import FormControl from '@mui/material/FormControl';
 import CustomDropdown from '../../components/CustomDropdown';
@@ -28,8 +25,6 @@ const Dashboard = () => {
   const [showBy, setshowBy] = useState('');
   const [categoryBy, setCategoryBy] = useState('');
   const options = ['Last Day', 'Last Week', 'Last Month', 'Last Year'];
-
-  const ITEM_HEIGHT = 48;
   
   const handleClick = (event) => setAnchorEl(event.currentTarget);
   const handleClose = () => setAnchorEl(null);
@@ -178,7 +173,7 @@ const Dashboard = () => {
                   <div class="d-flex align-items-center productBox">
                     <div class="imgWrapper">
                       <div class="img card shadow m-0">
-                        <img src="https://mironcoder-hotash.netlify.app/images/product/01.webp" className="w-100"/>
+                        <img src="https://mironcoder-hotash.netlify.app/images/product/01.webp" alt="product" className="w-100"/>
                       </div>
                     </div>
                     <div class="info pl-3">
@@ -214,7 +209,7 @@ const Dashboard = () => {
                   <div class="d-flex align-items-center productBox">
                     <div class="imgWrapper">
                       <div class="img card shadow m-0">
-                        <img src="https://mironcoder-hotash.netlify.app/images/product/01.webp" className="w-100"/>
+                        <img src="https://mironcoder-hotash.netlify.app/images/product/01.webp" alt="product" className="w-100"/>
                       </div>
                     </div>
                     <div class="info pl-3">
@@ -250,7 +245,7 @@ const Dashboard = () => {
                   <div class="d-flex align-items-center productBox">
                     <div class="imgWrapper">
                       <div class="img card shadow m-0">
-                        <img src="https://mironcoder-hotash.netlify.app/images/product/01.webp" className="w-100"/>
+                        <img src="https://mironcoder-hotash.netlify.app/images/product/01.webp" alt="product"  className="w-100"/>
                       </div>
                     </div>
                     <div class="info pl-3">
@@ -286,7 +281,7 @@ const Dashboard = () => {
                   <div class="d-flex align-items-center productBox">
                     <div class="imgWrapper">
                       <div class="img card shadow m-0">
-                        <img src="https://mironcoder-hotash.netlify.app/images/product/01.webp" className="w-100"/>
+                        <img src="https://mironcoder-hotash.netlify.app/images/product/01.webp" alt="product" className="w-100"/>
                       </div>
                     </div>
                     <div class="info pl-3">

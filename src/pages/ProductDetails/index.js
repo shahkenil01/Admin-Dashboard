@@ -89,7 +89,7 @@ const ProductDetails = () => {
               <Slider {...productSliderOptions} ref={bigSliderRef} className="sliderBig mb-2">
                 {imageUrls.map((url, index) => (
                   <div className="item" key={index}>
-                    <img src={url} className="w-100" />
+                    <img src={url} alt="ProductImages" className="w-100" />
                   </div>
                 ))}
               </Slider>
@@ -100,7 +100,7 @@ const ProductDetails = () => {
                     key={index}
                     onClick={() => handleThumbnailClick(index)}
                     style={{ cursor: 'pointer' }}>
-                    <img src={url} className="w-100" />
+                    <img src={url} alt="ProductSmlImages" className="w-100" />
                   </div>
                 ))}
               </Slider>

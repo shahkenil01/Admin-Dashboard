@@ -172,10 +172,7 @@ const ProductUpload =()=>{
                   <span
                     className="lazy-load-image-background blur lazy-load-image-loaded"
                     style={{ color: 'transparent', display: 'inline-block' }}>
-                    <img
-                      className="w-100"
-                      src="https://mironcoder-hotash.netlify.app/images/product/single/01.webp"
-                      alt="image"/>
+                    <img src="https://mironcoder-hotash.netlify.app/images/product/single/01.webp" alt="Product" className="w-100"/>
                   </span>
                 </div>
               </div>
