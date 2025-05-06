@@ -1,24 +1,18 @@
-import DashboardBox from './components/dashboardBox'; 
-import { FaUserCircle } from "react-icons/fa";
+import { useState, useMemo } from "react";
+
+import { FaUserCircle, FaEye, FaPencilAlt } from "react-icons/fa";
 import { IoMdCart } from "react-icons/io";
-import { MdShoppingBag } from "react-icons/md";
+import { MdShoppingBag, MdDelete } from "react-icons/md";
 import { GiStarsStack } from "react-icons/gi";
 import { IoIosTimer } from "react-icons/io";
 import { HiDotsVertical } from "react-icons/hi";
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-import Button from '@mui/material/Button';
-import { useState, useMemo } from "react";
 
-import FormControl from '@mui/material/FormControl';
+import { Menu, MenuItem, Button, FormControl, Pagination, Rating } from "@mui/material";
+
+import DashboardBox from './components/dashboardBox';
 import CustomDropdown from '../../components/CustomDropdown';
+
 import { Chart } from "react-google-charts";
-
-import { FaEye } from "react-icons/fa";
-import { FaPencilAlt } from "react-icons/fa";
-import { MdDelete } from "react-icons/md";
-
-import Pagination from '@mui/material/Pagination';
 
 const Dashboard = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -155,7 +149,7 @@ const Dashboard = () => {
             <thead className="thead-dark">
               <tr>
                 <th>UID</th>
-                <th>PRODUCT</th>
+                <th style={{ width: "300px" }}>PRODUCT</th>
                 <th>CATEGORY</th>
                 <th>BRAND</th>
                 <th>PRICE</th>
@@ -190,7 +184,9 @@ const Dashboard = () => {
                     <span class="new text-danger">₹200</span>
                   </div>
                 </td>
-                <td>4.5</td>
+                <td>
+                  <Rating name="read-only-rating" value={4.5} precision={0.5} size="small" readOnly />
+                </td>
                 <td>4.9(16)</td>
                 <td>380</td>
                 <td>₹38k</td>
@@ -226,7 +222,9 @@ const Dashboard = () => {
                     <span class="new text-danger">₹200</span>
                   </div>
                 </td>
-                <td>4.5</td>
+                <td>
+                  <Rating name="read-only-rating" value={4.5} precision={0.5} size="small" readOnly />
+                </td>
                 <td>4.9(16)</td>
                 <td>380</td>
                 <td>₹38k</td>
@@ -262,7 +260,9 @@ const Dashboard = () => {
                     <span class="new text-danger">₹200</span>
                   </div>
                 </td>
-                <td>4.5</td>
+                <td>
+                  <Rating name="read-only-rating" value={4.5} precision={0.5} size="small" readOnly />
+                </td>
                 <td>4.9(16)</td>
                 <td>380</td>
                 <td>₹38k</td>
@@ -298,7 +298,9 @@ const Dashboard = () => {
                     <span class="new text-danger">₹200</span>
                   </div>
                 </td>
-                <td>4.5</td>
+                <td>
+                  <Rating name="read-only-rating" value={4.5} precision={0.5} size="small" readOnly />
+                </td>
                 <td>4.9(16)</td>
                 <td>380</td>
                 <td>₹38k</td>

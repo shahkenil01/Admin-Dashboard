@@ -1,17 +1,13 @@
-import DashboardBox from '../Dashboard/components/dashboardBox'; 
-import { FaUserCircle } from "react-icons/fa";
-import { IoMdCart } from "react-icons/io";
-import { MdShoppingBag } from "react-icons/md";
-import FormControl from '@mui/material/FormControl';
-import CustomDropdown from '../../components/CustomDropdown';
-import Pagination from '@mui/material/Pagination';
-import { FaEye } from "react-icons/fa";
-import { FaPencilAlt } from "react-icons/fa";
-import { MdDelete } from "react-icons/md";
-import Button from '@mui/material/Button';
-import { Breadcrumbs, Typography, Link as MuiLink } from '@mui/material';
 import { Link } from 'react-router-dom';
-import { IoMdHome } from "react-icons/io";
+
+import DashboardBox from '../Dashboard/components/dashboardBox';
+import CustomDropdown from '../../components/CustomDropdown';
+
+import { FaUserCircle, FaEye, FaPencilAlt } from "react-icons/fa";
+import { IoMdCart, IoMdHome } from "react-icons/io";
+import { MdShoppingBag, MdDelete } from "react-icons/md";
+
+import { Button, FormControl, Pagination,  Breadcrumbs, Typography, Link as MuiLink, Rating } from '@mui/material';
 
 const Products = () => {
   const showBy = '';
@@ -89,7 +85,7 @@ const Products = () => {
             <thead className="thead-dark">
               <tr>
                 <th>UID</th>
-                <th>PRODUCT</th>
+                <th style={{ width: "300px" }}>PRODUCT</th>
                 <th>CATEGORY</th>
                 <th>BRAND</th>
                 <th>PRICE</th>
@@ -124,7 +120,9 @@ const Products = () => {
                     <span class="new text-danger">₹200</span>
                   </div>
                 </td>
-                <td>4.5</td>
+                <td>
+                  <Rating name="read-only-rating" value={4.5} precision={0.5} size="small" readOnly />
+                </td>
                 <td>4.9(16)</td>
                 <td>380</td>
                 <td>₹38k</td>
@@ -162,7 +160,9 @@ const Products = () => {
                     <span class="new text-danger">₹200</span>
                   </div>
                 </td>
-                <td>4.5</td>
+                <td>
+                  <Rating name="read-only-rating" value={4.5} precision={0.5} size="small" readOnly />
+                </td>
                 <td>4.9(16)</td>
                 <td>380</td>
                 <td>₹38k</td>
@@ -200,7 +200,9 @@ const Products = () => {
                     <span class="new text-danger">₹200</span>
                   </div>
                 </td>
-                <td>4.5</td>
+                <td>
+                  <Rating name="read-only-rating" value={4.5} precision={0.5} size="small" readOnly />
+                </td>
                 <td>4.9(16)</td>
                 <td>380</td>
                 <td>₹38k</td>
@@ -238,7 +240,9 @@ const Products = () => {
                     <span class="new text-danger">₹200</span>
                   </div>
                 </td>
-                <td>4.5</td>
+                <td>
+                  <Rating name="read-only-rating" value={4.5} precision={0.5} size="small" readOnly />
+                </td>
                 <td>4.9(16)</td>
                 <td>380</td>
                 <td>₹38k</td>
